@@ -1,0 +1,23 @@
+[2025-12-06T06:56:36.224+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: udemy_dashboard_TEST.run_dashboard_group3_TEST manual__2025-12-06T06:54:14.411897+00:00 [queued]>
+[2025-12-06T06:56:36.255+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: udemy_dashboard_TEST.run_dashboard_group3_TEST manual__2025-12-06T06:54:14.411897+00:00 [queued]>
+[2025-12-06T06:56:36.259+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-06T06:56:36.286+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_dashboard_group3_TEST> on 2025-12-06 06:54:14.411897+00:00
+[2025-12-06T06:56:36.300+0000] {standard_task_runner.py:60} INFO - Started process 29697 to run task
+[2025-12-06T06:56:36.311+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'udemy_dashboard_TEST', 'run_dashboard_group3_TEST', 'manual__2025-12-06T06:54:14.411897+00:00', '--job-id', '45', '--raw', '--subdir', 'DAGS_FOLDER/udemy_scraping_pipeline.py', '--cfg-path', '/tmp/tmp6xeb14dg']
+[2025-12-06T06:56:36.317+0000] {standard_task_runner.py:88} INFO - Job 45: Subtask run_dashboard_group3_TEST
+[2025-12-06T06:56:36.463+0000] {task_command.py:423} INFO - Running <TaskInstance: udemy_dashboard_TEST.run_dashboard_group3_TEST manual__2025-12-06T06:54:14.411897+00:00 [running]> on host a4bbc07b0b9a
+[2025-12-06T06:56:36.578+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='udemy_dashboard_TEST' AIRFLOW_CTX_TASK_ID='run_dashboard_group3_TEST' AIRFLOW_CTX_EXECUTION_DATE='2025-12-06T06:54:14.411897+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-06T06:54:14.411897+00:00'
+[2025-12-06T06:56:36.583+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-12-06T06:56:36.588+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/project_scraper && xvfb-run --auto-servernum python3 /opt/***/project_scraper/udemy_scraper.py --job dashboard --group group3 --test']
+[2025-12-06T06:56:36.608+0000] {subprocess.py:86} INFO - Output:
+[2025-12-06T06:56:38.616+0000] {subprocess.py:93} INFO - --- BẮT ĐẦU JOB: dashboard (Group: group3 | Start: 1) ---
+[2025-12-06T06:56:38.617+0000] {subprocess.py:93} INFO - [debug] Connection: DefaultEndpoint...indows.net | Container: udemy-it
+[2025-12-06T06:57:06.607+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-12-06T06:57:06.612+0000] {process_utils.py:131} INFO - Sending 15 to group 29697. PIDs of all processes in the group: [29699, 29721, 29729, 29697]
+[2025-12-06T06:57:06.613+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 29697
+[2025-12-06T06:57:06.614+0000] {taskinstance.py:2450} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-12-06T06:57:06.615+0000] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2025-12-06T06:57:06.710+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=29699, status='terminated', started='06:56:35') (29699) terminated with exit code None
+[2025-12-06T06:57:06.714+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=29721, status='terminated', started='06:56:35') (29721) terminated with exit code None
+[2025-12-06T06:57:06.714+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=29697, status='terminated', exitcode=0, started='06:56:35') (29697) terminated with exit code 0
+[2025-12-06T06:57:06.715+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=29729, status='terminated', started='06:56:36') (29729) terminated with exit code None

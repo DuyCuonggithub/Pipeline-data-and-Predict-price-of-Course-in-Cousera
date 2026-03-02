@@ -1,0 +1,53 @@
+[2025-12-04T16:38:54.790+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TEST_DataScience_Page287.run_scraper_custom_page manual__2025-12-04T16:38:52.036515+00:00 [queued]>
+[2025-12-04T16:38:54.798+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TEST_DataScience_Page287.run_scraper_custom_page manual__2025-12-04T16:38:52.036515+00:00 [queued]>
+[2025-12-04T16:38:54.799+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-04T16:38:54.813+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_scraper_custom_page> on 2025-12-04 16:38:52.036515+00:00
+[2025-12-04T16:38:54.822+0000] {standard_task_runner.py:60} INFO - Started process 166 to run task
+[2025-12-04T16:38:54.828+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'TEST_DataScience_Page287', 'run_scraper_custom_page', 'manual__2025-12-04T16:38:52.036515+00:00', '--job-id', '62', '--raw', '--subdir', 'DAGS_FOLDER/udemy_test_custom.py', '--cfg-path', '/tmp/tmplyflboaf']
+[2025-12-04T16:38:54.830+0000] {standard_task_runner.py:88} INFO - Job 62: Subtask run_scraper_custom_page
+[2025-12-04T16:38:54.906+0000] {task_command.py:423} INFO - Running <TaskInstance: TEST_DataScience_Page287.run_scraper_custom_page manual__2025-12-04T16:38:52.036515+00:00 [running]> on host 3c18b403b2da
+[2025-12-04T16:38:54.979+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='TEST_DataScience_Page287' AIRFLOW_CTX_TASK_ID='run_scraper_custom_page' AIRFLOW_CTX_EXECUTION_DATE='2025-12-04T16:38:52.036515+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-04T16:38:52.036515+00:00'
+[2025-12-04T16:38:54.981+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-12-04T16:38:54.982+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/project_scraper && xvfb-run --auto-servernum python3 /opt/***/project_scraper/udemy_scraper.py --job dashboard --group group3 --start-page 287 --test']
+[2025-12-04T16:38:54.996+0000] {subprocess.py:86} INFO - Output:
+[2025-12-04T16:38:57.510+0000] {subprocess.py:93} INFO - --- BẮT ĐẦU JOB: dashboard (Group: group3 | Start: 287) ---
+[2025-12-04T16:38:57.511+0000] {subprocess.py:93} INFO - [debug] Connection String: DefaultEndpoint...indows.net
+[2025-12-04T16:38:57.511+0000] {subprocess.py:93} INFO - [debug] Container Name: udemy-it
+[2025-12-04T16:38:57.512+0000] {subprocess.py:93} INFO - 
+[2025-12-04T16:38:57.512+0000] {subprocess.py:93} INFO - >>> CATEGORY: Data Science
+[2025-12-04T16:38:57.513+0000] {subprocess.py:93} INFO - 
+[2025-12-04T16:38:57.513+0000] {subprocess.py:93} INFO - [phase-1] 🕸️ Gom link trang 287 -> 326...
+[2025-12-04T16:39:00.346+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 1): https://www.udemy.com/courses/development/data-science/?p=287
+[2025-12-04T16:39:23.786+0000] {subprocess.py:93} INFO - [category] ✅ Tìm thấy 16 khóa học.
+[2025-12-04T16:39:24.962+0000] {subprocess.py:93} INFO - -> Page 287: +16 links
+[2025-12-04T16:39:26.585+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 1): https://www.udemy.com/courses/development/data-science/?p=288
+[2025-12-04T16:39:54.734+0000] {subprocess.py:93} INFO - [category] ✅ Tìm thấy 16 khóa học.
+[2025-12-04T16:39:55.909+0000] {subprocess.py:93} INFO - -> Page 288: +16 links
+[2025-12-04T16:39:55.909+0000] {subprocess.py:93} INFO - 🛑 TEST MODE: Đã chạy đủ 2 trang test (Start: 287).
+[2025-12-04T16:39:55.909+0000] {subprocess.py:93} INFO - 
+[2025-12-04T16:39:55.910+0000] {subprocess.py:93} INFO - [phase-2] 🚀 Parse & Save 32 khóa học...
+[2025-12-04T16:40:54.861+0000] {subprocess.py:93} INFO -   -> Progress: 32/32
+[2025-12-04T16:40:54.862+0000] {subprocess.py:93} INFO - 
+[2025-12-04T16:40:54.862+0000] {subprocess.py:93} INFO - [azure] ☁️ Đang upload: TEST_dashboard_group3_p287-289_20251204_164054 (32 khóa)...
+[2025-12-04T16:40:55.328+0000] {subprocess.py:93} INFO - [azure] ✅ Saved Courses: dashboard/TEST_dashboard_group3_p287-289_20251204_164054_courses.parquet
+[2025-12-04T16:40:55.381+0000] {subprocess.py:93} INFO - [azure] ✅ Saved Instructors: dashboard/TEST_dashboard_group3_p287-289_20251204_164054_instructors.parquet
+[2025-12-04T16:40:55.442+0000] {subprocess.py:93} INFO - [system] 🧹 RAM Cleaned.
+[2025-12-04T16:40:55.442+0000] {subprocess.py:93} INFO - 
+[2025-12-04T16:40:55.443+0000] {subprocess.py:93} INFO - >>> CATEGORY: Mobile Development
+[2025-12-04T16:40:55.443+0000] {subprocess.py:93} INFO - 
+[2025-12-04T16:40:55.444+0000] {subprocess.py:93} INFO - [phase-1] 🕸️ Gom link trang 287 -> 326...
+[2025-12-04T16:40:57.040+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 1): https://www.udemy.com/courses/development/mobile-apps/?p=287
+[2025-12-04T16:41:19.507+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T16:41:19.507+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 2): https://www.udemy.com/courses/development/mobile-apps/?p=287
+[2025-12-04T16:41:46.779+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T16:41:46.780+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 3): https://www.udemy.com/courses/development/mobile-apps/?p=287
+[2025-12-04T16:42:13.387+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T16:42:14.066+0000] {subprocess.py:93} INFO - [debug] 📸 Screenshot saved: /opt/***/project_scraper/log/_DEBUG_EMPTY_FINAL_20251204_164213.png
+[2025-12-04T16:42:15.737+0000] {subprocess.py:93} INFO - ⚠️ Trang 287 thiếu dữ liệu: 0 link. (Streak: 1/2)
+[2025-12-04T16:42:17.889+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 1): https://www.udemy.com/courses/development/mobile-apps/?p=288
+[2025-12-04T16:42:39.249+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T16:42:39.251+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 2): https://www.udemy.com/courses/development/mobile-apps/?p=288
+[2025-12-04T16:43:11.357+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T16:43:11.358+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 3): https://www.udemy.com/courses/development/mobile-apps/?p=288
+[2025-12-04T16:43:39.073+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T16:43:39.591+0000] {subprocess.py:93} INFO - [debug] 📸 Screenshot saved: /opt/***/project_scraper/log/_DEBUG_EMPTY_FINAL_20251204_164339.png

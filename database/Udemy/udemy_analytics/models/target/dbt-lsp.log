@@ -1,0 +1,28 @@
+==================== 2025-12-07 09:01:31.950171 | d47e8141-e8b0-4324-95c1-5daaefc2045a ====================
+09:01:31.950280 [info ]: Starting dbt LSP server
+09:01:31.950319 [info ]: Connecting to LSP client on port 8000
+09:01:31.953051 [info ]: Successfully connected to LSP client
+09:01:31.953120 [info ]: Creating LSP service...
+09:01:32.008033 [info ]: Creating LSP server...
+09:01:32.008056 [info ]: Starting LSP server...
+09:03:09.244012 [info ]: Cached model count updated: 0 models (estimate)
+09:03:09.286983 [info ]: Cached model count updated: 0 models (accurate)
+09:03:09.655956 [info ]: Cached model count updated: 0 models (estimate)
+09:03:09.897903 [info ]: Cached model count updated: 0 models (estimate)
+09:03:09.943796 [info ]: Cached model count updated: 0 models (accurate)
+09:03:10.116509 [info ]: Cached model count updated: 0 models (accurate)
+09:07:19.924767 [info ]: Cached model count updated: 0 models (estimate)
+09:07:20.236140 [info ]: Cached model count updated: 0 models (estimate)
+09:07:20.817039 [info ]: Cached model count updated: 0 models (estimate)
+09:07:21.522856 [info ]: Cached model count updated: 0 models (estimate)
+09:07:21.980797 [info ]: Cached model count updated: 0 models (estimate)
+09:07:22.054169 [info ]: Cached model count updated: 0 models (accurate)
+09:07:22.435081 [info ]: Cached model count updated: 0 models (accurate)
+09:07:22.707953 [info ]: Cached model count updated: 0 models (estimate)
+09:07:23.034039 [info ]: Cached model count updated: 0 models (estimate)
+09:07:23.362529 [info ]: Cached model count updated: 0 models (estimate)
+09:07:23.909377 [info ]: Cached model count updated: 0 models (estimate)
+09:07:24.039468 [info ]: Cached model count updated: 0 models (accurate)
+09:07:25.203702 [info ]: Cached model count updated: 0 models (estimate)
+09:07:25.265876 [info ]: Cached model count updated: 0 models (accurate)
+09:07:25.556276 [info ]: Cached model count updated: 0 models (accurate)

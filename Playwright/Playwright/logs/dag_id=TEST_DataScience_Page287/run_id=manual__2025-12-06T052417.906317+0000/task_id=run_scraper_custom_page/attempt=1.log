@@ -1,0 +1,45 @@
+[2025-12-06T05:27:53.139+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TEST_DataScience_Page287.run_scraper_custom_page manual__2025-12-06T05:24:17.906317+00:00 [queued]>
+[2025-12-06T05:27:53.152+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TEST_DataScience_Page287.run_scraper_custom_page manual__2025-12-06T05:24:17.906317+00:00 [queued]>
+[2025-12-06T05:27:53.153+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-06T05:27:53.169+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_scraper_custom_page> on 2025-12-06 05:24:17.906317+00:00
+[2025-12-06T05:27:53.176+0000] {standard_task_runner.py:60} INFO - Started process 23609 to run task
+[2025-12-06T05:27:53.180+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'TEST_DataScience_Page287', 'run_scraper_custom_page', 'manual__2025-12-06T05:24:17.906317+00:00', '--job-id', '37', '--raw', '--subdir', 'DAGS_FOLDER/udemy_test_DS_287.py', '--cfg-path', '/tmp/tmpjgtd8lh7']
+[2025-12-06T05:27:53.183+0000] {standard_task_runner.py:88} INFO - Job 37: Subtask run_scraper_custom_page
+[2025-12-06T05:27:53.252+0000] {task_command.py:423} INFO - Running <TaskInstance: TEST_DataScience_Page287.run_scraper_custom_page manual__2025-12-06T05:24:17.906317+00:00 [running]> on host a4bbc07b0b9a
+[2025-12-06T05:27:53.371+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='TEST_DataScience_Page287' AIRFLOW_CTX_TASK_ID='run_scraper_custom_page' AIRFLOW_CTX_EXECUTION_DATE='2025-12-06T05:24:17.906317+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-06T05:24:17.906317+00:00'
+[2025-12-06T05:27:53.373+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-12-06T05:27:53.376+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "cd /opt/***/project_scraper && xvfb-run --auto-servernum python3 /opt/***/project_scraper/udemy_scraper.py --job dashboard --category 'Data Science' --start-page 287 --test"]
+[2025-12-06T05:27:53.400+0000] {subprocess.py:86} INFO - Output:
+[2025-12-06T05:27:55.863+0000] {subprocess.py:93} INFO - --- BẮT ĐẦU JOB: dashboard (Group: cat_Data_Science | Start: 287) ---
+[2025-12-06T05:27:55.864+0000] {subprocess.py:93} INFO - [debug] Connection: DefaultEndpoint...indows.net | Container: udemy-it
+[2025-12-06T05:28:44.365+0000] {subprocess.py:93} INFO - [auth] 🔐 Đang trích xuất Cookie...
+[2025-12-06T05:28:45.975+0000] {subprocess.py:93} INFO - [auth] ✅ Đã lấy được 45 cookies.
+[2025-12-06T05:28:49.461+0000] {subprocess.py:93} INFO - [system] ✅ Auth Cookies Loaded (45 items).
+[2025-12-06T05:28:49.462+0000] {subprocess.py:93} INFO - 
+[2025-12-06T05:28:49.463+0000] {subprocess.py:93} INFO - >>> CATEGORY: Data Science
+[2025-12-06T05:28:49.463+0000] {subprocess.py:93} INFO - 
+[2025-12-06T05:28:49.464+0000] {subprocess.py:93} INFO - [phase-1] 🕸️ Gom link trang 287 -> 326...
+[2025-12-06T05:28:52.826+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 1): https://www.udemy.com/courses/development/data-science/?p=287
+[2025-12-06T05:28:56.313+0000] {subprocess.py:93} INFO - [wait] ⏳ Chờ thẻ khóa học...
+[2025-12-06T05:29:24.331+0000] {subprocess.py:93} INFO - [category] ✅ Tìm thấy 16 khóa học.
+[2025-12-06T05:29:27.526+0000] {subprocess.py:93} INFO - -> Page 287: +16 links
+[2025-12-06T05:29:31.551+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 1): https://www.udemy.com/courses/development/data-science/?p=288
+[2025-12-06T05:29:35.814+0000] {subprocess.py:93} INFO - [wait] ⏳ Chờ thẻ khóa học...
+[2025-12-06T05:30:01.478+0000] {subprocess.py:93} INFO - [category] ✅ Tìm thấy 12 khóa học.
+[2025-12-06T05:30:04.168+0000] {subprocess.py:93} INFO - ⚠️ Trang 288 thiếu dữ liệu: 12 link. (Streak: 1/2)
+[2025-12-06T05:30:04.169+0000] {subprocess.py:93} INFO - 🛑 TEST MODE: Đã đủ 2 trang.
+[2025-12-06T05:30:04.170+0000] {subprocess.py:93} INFO - 
+[2025-12-06T05:30:04.171+0000] {subprocess.py:93} INFO - [phase-2] 🚀 Parse & Save 28 khóa học...
+[2025-12-06T05:31:24.505+0000] {subprocess.py:93} INFO -   -> Progress: 28/28
+[2025-12-06T05:31:24.506+0000] {subprocess.py:93} INFO - 
+[2025-12-06T05:31:24.507+0000] {subprocess.py:93} INFO - [azure] ☁️ Đang upload: TEST_dashboard_cat_Data_Science_p287-289_20251206_053124 (28 khóa)...
+[2025-12-06T05:31:25.122+0000] {subprocess.py:93} INFO - [azure] ✅ Saved Courses: dashboard/TEST_dashboard_cat_Data_Science_p287-289_20251206_053124_courses.parquet
+[2025-12-06T05:31:25.180+0000] {subprocess.py:93} INFO - [azure] ✅ Saved Instructors: dashboard/TEST_dashboard_cat_Data_Science_p287-289_20251206_053124_instructors.parquet
+[2025-12-06T05:31:25.261+0000] {subprocess.py:93} INFO - [system] 🧹 RAM Cleaned.
+[2025-12-06T05:31:25.262+0000] {subprocess.py:93} INFO - 🛑 TEST MODE: Dừng sau 2 trang.
+[2025-12-06T05:31:25.262+0000] {subprocess.py:93} INFO - 
+[2025-12-06T05:31:25.263+0000] {subprocess.py:93} INFO - --- [HOÀN TẤT JOB] ---
+[2025-12-06T05:31:25.826+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-12-06T05:31:25.897+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=TEST_DataScience_Page287, task_id=run_scraper_custom_page, execution_date=20251206T052417, start_date=20251206T052753, end_date=20251206T053125
+[2025-12-06T05:31:25.983+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-06T05:31:26.018+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

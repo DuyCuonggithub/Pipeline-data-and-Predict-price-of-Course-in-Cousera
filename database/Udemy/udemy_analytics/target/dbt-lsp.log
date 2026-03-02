@@ -1,0 +1,1020 @@
+==================== 2025-12-07 09:15:22.371244 | 7e28e1a0-2aaa-436d-8c33-edc8c5e68fb5 ====================
+09:15:22.371300 [info ]: Starting dbt LSP server
+09:15:22.371315 [info ]: Connecting to LSP client on port 8000
+09:15:22.373570 [info ]: Successfully connected to LSP client
+09:15:22.373598 [info ]: Creating LSP service...
+09:15:22.438906 [info ]: Creating LSP server...
+09:15:22.438929 [info ]: Starting LSP server...
+09:15:22.662663 [info ]: Cached model count updated: 143 models (estimate)
+09:15:22.767799 [error]: dbt1060: Ignored unexpected key `"name"`. YAML path: `name`.
+  --> models\dbt_internal_packages\dbt-adapters\dbt_project.yml:1:1
+09:15:22.770474 [error]: dbt1060: Ignored unexpected key `"name"`. YAML path: `name`.
+  --> models\dbt_internal_packages\dbt-postgres\dbt_project.yml:1:1
+09:15:22.896871 [error]: dbt1005: Found duplicate model 'timestamps'
+  --> models\dbt_internal_packages\dbt-postgres\macros\timestamps.sql
+09:15:22.896950 [error]: dbt1005: Found duplicate model 'strategies'
+  --> models\dbt_internal_packages\dbt-adapters\macros\materializations\snapshots\strategies.sql
+09:15:22.896981 [error]: dbt1005: Found duplicate model 'split_part'
+  --> models\dbt_internal_packages\dbt-postgres\macros\utils\split_part.sql
+09:15:22.896997 [error]: dbt1005: Found duplicate model 'snapshot_merge'
+  --> models\dbt_internal_packages\dbt-postgres\macros\materializations\snapshot_merge.sql
+09:15:22.897011 [error]: dbt1005: Found duplicate model 'schema'
+  --> models\dbt_internal_packages\dbt-adapters\macros\relations\schema.sql
+09:15:22.897025 [error]: dbt1005: Found duplicate model 'replace'
+  --> models\dbt_internal_packages\dbt-postgres\macros\relations\view\replace.sql
+09:15:22.897037 [error]: dbt1005: Found duplicate model 'replace'
+  --> models\dbt_internal_packages\dbt-postgres\macros\relations\table\replace.sql
+09:15:22.897050 [error]: dbt1005: Found duplicate model 'replace'
+  --> models\dbt_internal_packages\dbt-adapters\macros\utils\replace.sql
+09:15:22.897064 [error]: dbt1005: Found duplicate model 'replace'
+  --> models\dbt_internal_packages\dbt-adapters\macros\relations\view\replace.sql
+09:15:22.897075 [error]: dbt1005: Found duplicate model 'replace'
+  --> models\dbt_internal_packages\dbt-adapters\macros\relations\table\replace.sql
+09:15:22.897089 [error]: dbt1005: Found duplicate model 'replace'
+  --> models\dbt_internal_packages\dbt-adapters\macros\relations\replace.sql
+09:15:22.897105 [error]: dbt1005: Found duplicate model 'rename'
+  --> models\dbt_internal_packages\dbt-postgres\macros\relations\view\rename.sql
+09:15:22.897116 [error]: dbt1005: Found duplicate model 'rename'
+  --> models\dbt_internal_packages\dbt-postgres\macros\relations\table\rename.sql
+09:15:22.897132 [error]: dbt1005: Found duplicate model 'rename'
+  --> models\dbt_internal_packages\dbt-postgres\macros\relations\materialized_view\rename.sql
+09:15:22.897145 [error]: dbt1005: Found duplicate model 'rename'
+  --> models\dbt_internal_packages\dbt-adapters\macros\relations\view\rename.sql
+09:15:22.897158 [error]: dbt1005: Found duplicate model 'rename'
+  --> models\dbt_internal_packages\dbt-adapters\macros\relations\table\rename.sql
+09:15:22.897171 [error]: dbt1005: Found duplicate model 'rename'
+  --> models\dbt_internal_packages\dbt-adapters\macros\relations\rename.sql
+09:15:22.897182 [error]: dbt1005: Found duplicate model 'refresh'
+  --> models\dbt_internal_packages\dbt-postgres\macros\relations\materialized_view\refresh.sql
+09:15:22.897195 [error]: dbt1005: Found duplicate model 'listagg'
+  --> models\dbt_internal_packages\dbt-postgres\macros\utils\listagg.sql
+09:15:22.897208 [error]: dbt1005: Found duplicate model 'last_day'
+  --> models\dbt_internal_packages\dbt-postgres\macros\utils\last_day.sql
+09:15:22.897220 [error]: dbt1005: Found duplicate model 'helpers'
+  --> models\dbt_internal_packages\dbt-adapters\macros\materializations\tests\helpers.sql
+09:15:22.897235 [error]: dbt1005: Found duplicate model 'helpers'
+  --> models\dbt_internal_packages\dbt-adapters\macros\materializations\snapshots\helpers.sql
+09:15:22.897250 [error]: dbt1005: Found duplicate model 'helpers'
+  --> models\dbt_internal_packages\dbt-adapters\macros\materializations\seeds\helpers.sql
+09:15:22.897262 [error]: dbt1005: Found duplicate model 'drop'
+  --> models\dbt_internal_packages\dbt-postgres\macros\relations\view\drop.sql
+09:15:22.897274 [error]: dbt1005: Found duplicate model 'drop'
+  --> models\dbt_internal_packages\dbt-postgres\macros\relations\table\drop.sql
+09:15:22.897286 [error]: dbt1005: Found duplicate model 'drop'
+  --> models\dbt_internal_packages\dbt-postgres\macros\relations\materialized_view\drop.sql
+09:15:22.897298 [error]: dbt1005: Found duplicate model 'drop'
+  --> models\dbt_internal_packages\dbt-adapters\macros\relations\view\drop.sql
+09:15:22.897310 [error]: dbt1005: Found duplicate model 'drop'
+  --> models\dbt_internal_packages\dbt-adapters\macros\relations\table\drop.sql
+09:15:22.897322 [error]: dbt1005: Found duplicate model 'drop'
+  --> models\dbt_internal_packages\dbt-adapters\macros\relations\materialized_view\drop.sql
+09:15:22.897333 [error]: dbt1005: Found duplicate model 'datediff'
+  --> models\dbt_internal_packages\dbt-postgres\macros\utils\datediff.sql
+09:15:22.897344 [error]: dbt1005: Found duplicate model 'dateadd'
+  --> models\dbt_internal_packages\dbt-postgres\macros\utils\dateadd.sql
+09:15:22.897356 [error]: dbt1005: Found duplicate model 'create'
+  --> models\dbt_internal_packages\dbt-postgres\macros\relations\materialized_view\create.sql
+09:15:22.897369 [error]: dbt1005: Found duplicate model 'create'
+  --> models\dbt_internal_packages\dbt-adapters\macros\relations\view\create.sql
+09:15:22.897381 [error]: dbt1005: Found duplicate model 'create'
+  --> models\dbt_internal_packages\dbt-adapters\macros\relations\table\create.sql
+09:15:22.897391 [error]: dbt1005: Found duplicate model 'create'
+  --> models\dbt_internal_packages\dbt-adapters\macros\relations\materialized_view\create.sql
+09:15:22.897405 [error]: dbt1005: Found duplicate model 'any_value'
+  --> models\dbt_internal_packages\dbt-postgres\macros\utils\any_value.sql
+09:20:43.127976 [info ]: Cached model count updated: 12 models (estimate)
+09:20:43.188826 [error]: dbt1005: Source 'raw.courses' not found in project. Searched for 'courses'
+  --> models\staging\stg_courses.sql:2:19
+09:20:43.188882 [error]: dbt1005: Source 'raw.instructors' not found in project. Searched for 'instructors'
+  --> models\staging\stg_instructors.sql:2:19
+09:20:43.188915 [error]: dbt1005: Source 'raw.price_tracker' not found in project. Searched for 'price_tracker'
+  --> models\staging\stg_price_tracker.sql:2:19
+09:20:43.190024 [info ]: Cached model count updated: 12 models (accurate)
+09:20:43.393902 [error]: dbt1501: Failed to render SQL not a key type: Source not found for source name: raw, table name: courses
+(in models\staging\stg_courses.sql:2:19)
+  --> models\staging\stg_courses.sql:2:19
+09:20:43.394350 [error]: dbt1501: Failed to render SQL not a key type: Source not found for source name: raw, table name: price_tracker
+(in models\staging\stg_price_tracker.sql:2:19)
+  --> models\staging\stg_price_tracker.sql:2:19
+09:20:43.394428 [error]: dbt1501: Failed to render SQL not a key type: Source not found for source name: raw, table name: instructors
+(in models\staging\stg_instructors.sql:2:19)
+  --> models\staging\stg_instructors.sql:2:19
+09:20:43.406191 [info ]: Cached model count updated: 12 models (accurate)
+09:20:43.569511 [info ]: Cached model count updated: 12 models (estimate)
+09:20:43.570559 [info ]: Cached model count updated: 12 models (accurate)
+09:23:13.911427 [info ]: Cached model count updated: 12 models (estimate)
+09:23:14.068595 [info ]: Cached model count updated: 12 models (estimate)
+09:23:14.151176 [info ]: Cached model count updated: 12 models (accurate)
+09:23:14.155272 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:23:14.352797 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.price_tracker' (Missing schema for 'source.udemy_analytics.raw.price_tracker' (Expected at db/schemas/udemy_dw/raw/price_tracker).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+09:23:14.352951 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.instructors' (Missing schema for 'source.udemy_analytics.raw.instructors' (Expected at db/schemas/udemy_dw/raw/instructors).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+09:23:14.353045 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+09:23:14.361246 [info ]: Cached model count updated: 12 models (accurate)
+09:26:52.260144 [info ]: Cached model count updated: 12 models (estimate)
+09:26:52.321649 [info ]: Cached model count updated: 12 models (accurate)
+09:26:52.325846 [debug]: Incremental compilation - 8 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+09:26:52.329556 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:26:52.595108 [info ]: Cached model count updated: 12 models (estimate)
+09:26:52.616871 [info ]: Cached model count updated: 12 models (accurate)
+09:26:52.617088 [debug]: Incremental compilation - 8 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+09:26:52.618111 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:26:56.248705 [info ]: Cached model count updated: 12 models (estimate)
+09:26:56.290754 [info ]: Cached model count updated: 12 models (accurate)
+09:26:56.291048 [debug]: Incremental compilation - 12 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors"}
+09:26:56.292174 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:26:56.585863 [info ]: Cached model count updated: 12 models (estimate)
+09:26:56.613281 [info ]: Cached model count updated: 12 models (accurate)
+09:26:56.613808 [debug]: Incremental compilation - 12 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors"}
+09:26:56.615310 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:27:00.987073 [info ]: Cached model count updated: 12 models (estimate)
+09:27:01.024462 [info ]: Cached model count updated: 12 models (accurate)
+09:27:01.024777 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:27:01.025939 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:27:01.334615 [info ]: Cached model count updated: 12 models (estimate)
+09:27:01.357153 [info ]: Cached model count updated: 12 models (accurate)
+09:27:01.357567 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:27:01.359049 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:29:12.236949 [info ]: Cached model count updated: 12 models (estimate)
+09:29:12.286371 [info ]: Cached model count updated: 12 models (accurate)
+09:29:12.286883 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:29:12.288386 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:29:12.585614 [info ]: Cached model count updated: 12 models (estimate)
+09:29:12.618572 [info ]: Cached model count updated: 12 models (accurate)
+09:29:12.619055 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:29:12.620505 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:29:16.577548 [info ]: Cached model count updated: 12 models (estimate)
+09:29:16.617577 [info ]: Cached model count updated: 12 models (accurate)
+09:29:16.618157 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:29:16.619313 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:29:16.900101 [info ]: Cached model count updated: 12 models (estimate)
+09:29:16.923349 [info ]: Cached model count updated: 12 models (accurate)
+09:29:16.923697 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:29:16.924833 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:29:20.163325 [info ]: Cached model count updated: 12 models (estimate)
+09:29:20.203054 [info ]: Cached model count updated: 12 models (accurate)
+09:29:20.203492 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:29:20.204539 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:29:20.491145 [info ]: Cached model count updated: 12 models (estimate)
+09:29:20.521429 [info ]: Cached model count updated: 12 models (accurate)
+09:29:20.521804 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:29:20.522936 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:29:26.605498 [info ]: Cached model count updated: 12 models (estimate)
+09:29:26.634842 [info ]: Cached model count updated: 12 models (accurate)
+09:29:26.635201 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:29:26.636527 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:29:26.934724 [info ]: Cached model count updated: 12 models (estimate)
+09:29:26.961683 [info ]: Cached model count updated: 12 models (accurate)
+09:29:26.962097 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:29:26.963514 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:29.237462 [info ]: Cached model count updated: 12 models (estimate)
+09:30:29.304717 [info ]: Cached model count updated: 12 models (accurate)
+09:30:29.305291 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:29.307492 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:29.580733 [info ]: Cached model count updated: 12 models (estimate)
+09:30:29.608053 [info ]: Cached model count updated: 12 models (accurate)
+09:30:29.608410 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:29.609311 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:30.063993 [info ]: Cached model count updated: 12 models (estimate)
+09:30:30.093642 [info ]: Cached model count updated: 12 models (accurate)
+09:30:30.094005 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:30.095576 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:30.404115 [info ]: Cached model count updated: 12 models (estimate)
+09:30:30.429662 [info ]: Cached model count updated: 12 models (accurate)
+09:30:30.430025 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:30.430921 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:31.032776 [info ]: Cached model count updated: 12 models (estimate)
+09:30:31.068828 [info ]: Cached model count updated: 12 models (accurate)
+09:30:31.069460 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:31.071171 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:31.344259 [info ]: Cached model count updated: 12 models (estimate)
+09:30:31.380014 [info ]: Cached model count updated: 12 models (accurate)
+09:30:31.380617 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:31.382291 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:31.804757 [info ]: Cached model count updated: 12 models (estimate)
+09:30:31.833130 [info ]: Cached model count updated: 12 models (accurate)
+09:30:31.833661 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:31.835237 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:32.153117 [info ]: Cached model count updated: 12 models (estimate)
+09:30:32.188865 [info ]: Cached model count updated: 12 models (accurate)
+09:30:32.189579 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:32.191184 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:32.671887 [info ]: Cached model count updated: 12 models (estimate)
+09:30:32.702696 [info ]: Cached model count updated: 12 models (accurate)
+09:30:32.703141 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:32.704334 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:33.010328 [info ]: Cached model count updated: 12 models (estimate)
+09:30:33.049280 [info ]: Cached model count updated: 12 models (accurate)
+09:30:33.049989 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:33.051418 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:33.486721 [info ]: Cached model count updated: 12 models (estimate)
+09:30:33.523826 [info ]: Cached model count updated: 12 models (accurate)
+09:30:33.524487 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:33.526013 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:33.835777 [info ]: Cached model count updated: 12 models (estimate)
+09:30:33.866477 [info ]: Cached model count updated: 12 models (accurate)
+09:30:33.867228 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:33.868887 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:34.244967 [info ]: Cached model count updated: 12 models (estimate)
+09:30:34.312231 [info ]: Cached model count updated: 12 models (accurate)
+09:30:34.312668 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:34.313868 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:34.568838 [info ]: Cached model count updated: 12 models (estimate)
+09:30:34.604618 [info ]: Cached model count updated: 12 models (accurate)
+09:30:34.605093 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:34.606643 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:35.046555 [info ]: Cached model count updated: 12 models (estimate)
+09:30:35.079422 [info ]: Cached model count updated: 12 models (accurate)
+09:30:35.080115 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:35.081736 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:35.395206 [info ]: Cached model count updated: 12 models (estimate)
+09:30:35.422812 [info ]: Cached model count updated: 12 models (accurate)
+09:30:35.423219 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:35.424213 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:36.088602 [info ]: Cached model count updated: 12 models (estimate)
+09:30:36.120496 [info ]: Cached model count updated: 12 models (accurate)
+09:30:36.121004 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:36.122227 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:36.406414 [info ]: Cached model count updated: 12 models (estimate)
+09:30:36.440666 [info ]: Cached model count updated: 12 models (accurate)
+09:30:36.441338 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:36.442893 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:37.067303 [info ]: Cached model count updated: 12 models (estimate)
+09:30:37.096647 [info ]: Cached model count updated: 12 models (accurate)
+09:30:37.097102 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:37.098026 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:30:37.406054 [info ]: Cached model count updated: 12 models (estimate)
+09:30:37.443273 [info ]: Cached model count updated: 12 models (accurate)
+09:30:37.443927 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:30:37.445716 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:34:23.385269 [info ]: Cached model count updated: 12 models (estimate)
+09:34:23.443200 [info ]: Cached model count updated: 12 models (accurate)
+09:34:23.443657 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:34:23.444807 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:34:23.706935 [info ]: Cached model count updated: 12 models (estimate)
+09:34:23.738485 [info ]: Cached model count updated: 12 models (accurate)
+09:34:23.739132 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:34:23.740903 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:34:28.630703 [info ]: Cached model count updated: 12 models (estimate)
+09:34:28.676616 [info ]: Cached model count updated: 12 models (accurate)
+09:34:28.677072 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:34:28.678267 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:34:28.963556 [info ]: Cached model count updated: 12 models (estimate)
+09:34:28.995169 [info ]: Cached model count updated: 12 models (accurate)
+09:34:28.995979 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:34:28.997754 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:34:37.487984 [info ]: Cached model count updated: 12 models (estimate)
+09:34:37.528415 [info ]: Cached model count updated: 12 models (accurate)
+09:34:37.529412 [debug]: Incremental compilation - 14 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:34:37.530714 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:34:37.831665 [info ]: Cached model count updated: 12 models (estimate)
+09:34:37.856753 [info ]: Cached model count updated: 12 models (accurate)
+09:34:37.857277 [debug]: Incremental compilation - 14 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:34:37.858299 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:34:42.459837 [info ]: Cached model count updated: 12 models (estimate)
+09:34:42.495085 [info ]: Cached model count updated: 12 models (accurate)
+09:34:42.495584 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:34:42.496805 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:34:42.808036 [info ]: Cached model count updated: 12 models (estimate)
+09:34:42.840354 [info ]: Cached model count updated: 12 models (accurate)
+09:34:42.840875 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:34:42.842255 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:34:49.019986 [info ]: Cached model count updated: 12 models (estimate)
+09:34:49.066537 [info ]: Cached model count updated: 12 models (accurate)
+09:34:49.067175 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:34:49.068263 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:34:49.363417 [info ]: Cached model count updated: 12 models (estimate)
+09:34:49.396998 [info ]: Cached model count updated: 12 models (accurate)
+09:34:49.397553 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:34:49.398772 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:35:15.047993 [info ]: Cached model count updated: 12 models (estimate)
+09:35:15.087014 [info ]: Cached model count updated: 12 models (accurate)
+09:35:15.087461 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:35:15.088589 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:35:15.393532 [info ]: Cached model count updated: 12 models (estimate)
+09:35:15.422598 [info ]: Cached model count updated: 12 models (accurate)
+09:35:15.423198 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:35:15.424575 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:35:24.404996 [info ]: Cached model count updated: 12 models (estimate)
+09:35:24.445011 [info ]: Cached model count updated: 12 models (accurate)
+09:35:24.445521 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:35:24.446573 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:35:24.747196 [info ]: Cached model count updated: 12 models (estimate)
+09:35:24.776941 [info ]: Cached model count updated: 12 models (accurate)
+09:35:24.777466 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:35:24.778773 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:35:48.893968 [info ]: Cached model count updated: 12 models (estimate)
+09:35:48.929969 [info ]: Cached model count updated: 12 models (accurate)
+09:35:48.930548 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:35:48.931877 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:35:49.215741 [info ]: Cached model count updated: 12 models (estimate)
+09:35:49.243899 [info ]: Cached model count updated: 12 models (accurate)
+09:35:49.244409 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:35:49.245674 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:35:55.902666 [info ]: Cached model count updated: 12 models (estimate)
+09:35:55.931727 [info ]: Cached model count updated: 12 models (accurate)
+09:35:55.932492 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:35:55.934127 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:35:56.236068 [info ]: Cached model count updated: 12 models (estimate)
+09:35:56.264029 [info ]: Cached model count updated: 12 models (accurate)
+09:35:56.264500 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:35:56.265447 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:35:59.112005 [info ]: Cached model count updated: 12 models (estimate)
+09:35:59.138243 [info ]: Cached model count updated: 12 models (accurate)
+09:35:59.138715 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:35:59.139672 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:35:59.439363 [info ]: Cached model count updated: 12 models (estimate)
+09:35:59.476647 [info ]: Cached model count updated: 12 models (accurate)
+09:35:59.477098 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:35:59.478268 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:36:01.585408 [info ]: Cached model count updated: 12 models (estimate)
+09:36:01.618255 [info ]: Cached model count updated: 12 models (accurate)
+09:36:01.618975 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:36:01.620576 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:36:01.929563 [info ]: Cached model count updated: 12 models (estimate)
+09:36:01.959016 [info ]: Cached model count updated: 12 models (accurate)
+09:36:01.959479 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:36:01.960534 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:36:06.510010 [info ]: Cached model count updated: 12 models (estimate)
+09:36:06.548535 [info ]: Cached model count updated: 12 models (accurate)
+09:36:06.549289 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:36:06.550834 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:36:06.845116 [info ]: Cached model count updated: 12 models (estimate)
+09:36:06.876923 [info ]: Cached model count updated: 12 models (accurate)
+09:36:06.877545 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:36:06.878733 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:36:15.111783 [info ]: Cached model count updated: 12 models (estimate)
+09:36:15.144313 [info ]: Cached model count updated: 12 models (accurate)
+09:36:15.144805 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:36:15.145830 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:36:15.445470 [info ]: Cached model count updated: 12 models (estimate)
+09:36:15.470244 [info ]: Cached model count updated: 12 models (accurate)
+09:36:15.470756 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:36:15.471759 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:36:20.266469 [info ]: Cached model count updated: 12 models (estimate)
+09:36:20.300132 [info ]: Cached model count updated: 12 models (accurate)
+09:36:20.300794 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:36:20.301908 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:36:20.605858 [info ]: Cached model count updated: 12 models (estimate)
+09:36:20.632872 [info ]: Cached model count updated: 12 models (accurate)
+09:36:20.633316 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:36:20.634313 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:38:52.664713 [info ]: Cached model count updated: 12 models (estimate)
+09:38:52.716979 [info ]: Cached model count updated: 12 models (accurate)
+09:38:52.717786 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:38:52.719376 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:38:53.015345 [info ]: Cached model count updated: 12 models (estimate)
+09:38:53.045273 [info ]: Cached model count updated: 12 models (accurate)
+09:38:53.046107 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:38:53.047248 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:39:00.046634 [info ]: Cached model count updated: 12 models (estimate)
+09:39:00.074026 [info ]: Cached model count updated: 12 models (accurate)
+09:39:00.074523 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:39:00.075563 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:39:00.390727 [info ]: Cached model count updated: 12 models (estimate)
+09:39:00.414319 [info ]: Cached model count updated: 12 models (accurate)
+09:39:00.414776 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:39:00.415824 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:39:07.105622 [info ]: Cached model count updated: 12 models (estimate)
+09:39:07.141433 [info ]: Cached model count updated: 12 models (accurate)
+09:39:07.141950 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:39:07.143584 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:39:07.445573 [info ]: Cached model count updated: 12 models (estimate)
+09:39:07.472812 [info ]: Cached model count updated: 12 models (accurate)
+09:39:07.473472 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:39:07.474624 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:39:11.804169 [info ]: Cached model count updated: 12 models (estimate)
+09:39:11.844405 [info ]: Cached model count updated: 12 models (accurate)
+09:39:11.844868 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:39:11.845803 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:39:12.141256 [info ]: Cached model count updated: 12 models (estimate)
+09:39:12.164844 [info ]: Cached model count updated: 12 models (accurate)
+09:39:12.165392 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:39:12.166420 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:39:16.984511 [info ]: Cached model count updated: 12 models (estimate)
+09:39:17.026465 [info ]: Cached model count updated: 12 models (accurate)
+09:39:17.027078 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:39:17.028124 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:39:17.325401 [info ]: Cached model count updated: 12 models (estimate)
+09:39:17.357481 [info ]: Cached model count updated: 12 models (accurate)
+09:39:17.357961 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:39:17.359167 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:43:21.104051 [info ]: Cached model count updated: 12 models (estimate)
+09:43:21.149997 [info ]: Cached model count updated: 12 models (accurate)
+09:43:21.150449 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:43:21.151507 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:43:21.446240 [info ]: Cached model count updated: 12 models (estimate)
+09:43:21.472457 [info ]: Cached model count updated: 12 models (accurate)
+09:43:21.473139 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:43:21.474784 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:43:28.258611 [info ]: Cached model count updated: 12 models (estimate)
+09:43:28.302042 [info ]: Cached model count updated: 12 models (accurate)
+09:43:28.302631 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:43:28.303873 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+09:43:28.590414 [info ]: Cached model count updated: 12 models (estimate)
+09:43:28.617654 [info ]: Cached model count updated: 12 models (accurate)
+09:43:28.618212 [debug]: Incremental compilation - 15 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_date", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+09:43:28.619460 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+==================== 2025-12-07 10:04:48.829484 | 1d16000b-a2bf-4308-a18b-c9e09f9caad1 ====================
+10:04:48.837291 [info ]: Starting dbt LSP server
+10:04:48.841853 [info ]: Connecting to LSP client on port 8000
+10:04:48.849076 [info ]: Successfully connected to LSP client
+10:04:48.849392 [info ]: Creating LSP service...
+10:04:49.117409 [info ]: Creating LSP server...
+10:04:49.117448 [info ]: Starting LSP server...
+10:04:49.892243 [info ]: Cached model count updated: 12 models (estimate)
+10:04:50.427767 [info ]: Cached model count updated: 12 models (accurate)
+10:04:50.496184 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+10:04:50.944282 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.price_tracker' (Missing schema for 'source.udemy_analytics.raw.price_tracker' (Expected at db/schemas/udemy_dw/raw/price_tracker).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+10:04:50.944931 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+10:04:50.945132 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.instructors' (Missing schema for 'source.udemy_analytics.raw.instructors' (Expected at db/schemas/udemy_dw/raw/instructors).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+10:04:50.962450 [info ]: Cached model count updated: 12 models (accurate)
+12:51:40.575747 [info ]: Cached model count updated: 12 models (estimate)
+12:51:40.695569 [info ]: Cached model count updated: 12 models (accurate)
+12:51:40.701117 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+12:51:40.733624 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+12:51:40.930760 [info ]: Cached model count updated: 12 models (estimate)
+12:51:40.952176 [info ]: Cached model count updated: 12 models (accurate)
+12:51:40.952428 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+12:51:40.953364 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+12:51:41.072565 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+12:51:41.091419 [info ]: Cached model count updated: 12 models (accurate)
+13:03:52.655924 [info ]: Cached model count updated: 12 models (estimate)
+13:03:52.797703 [info ]: Cached model count updated: 12 models (accurate)
+13:03:52.861273 [info ]: Cached model count updated: 12 models (estimate)
+13:03:52.887082 [info ]: Cached model count updated: 12 models (accurate)
+13:03:52.894039 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:03:52.931100 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:03:53.169274 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:03:53.185378 [info ]: Cached model count updated: 12 models (accurate)
+13:03:53.444359 [info ]: Cached model count updated: 12 models (estimate)
+13:03:53.470795 [info ]: Cached model count updated: 12 models (accurate)
+13:03:53.471030 [debug]: Incremental compilation - 4 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:03:53.472481 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:03:53.610303 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:03:53.616884 [info ]: Cached model count updated: 12 models (accurate)
+13:03:53.780565 [info ]: Cached model count updated: 12 models (estimate)
+13:03:53.781168 [info ]: Cached model count updated: 12 models (accurate)
+13:03:54.644057 [info ]: Cached model count updated: 12 models (estimate)
+13:03:54.666660 [info ]: Cached model count updated: 12 models (accurate)
+13:03:54.666869 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:03:54.667827 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:03:54.790915 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:03:54.799126 [info ]: Cached model count updated: 12 models (accurate)
+13:03:54.991818 [info ]: Cached model count updated: 12 models (estimate)
+13:03:54.992197 [info ]: Cached model count updated: 12 models (accurate)
+13:04:40.238158 [info ]: Cached model count updated: 12 models (estimate)
+13:04:40.259912 [info ]: Cached model count updated: 12 models (accurate)
+13:04:40.260130 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:04:40.261306 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:04:40.397853 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:04:40.407646 [info ]: Cached model count updated: 12 models (accurate)
+13:04:40.587189 [info ]: Cached model count updated: 12 models (estimate)
+13:04:40.587524 [info ]: Cached model count updated: 12 models (accurate)
+13:04:41.247021 [info ]: Cached model count updated: 12 models (estimate)
+13:04:41.274992 [info ]: Cached model count updated: 12 models (accurate)
+13:04:41.275205 [debug]: Incremental compilation - 3 nodes selected: {"model.udemy_analytics.dim_date", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:04:41.276432 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:04:41.412779 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:04:41.420455 [info ]: Cached model count updated: 12 models (accurate)
+13:04:41.570720 [info ]: Cached model count updated: 12 models (estimate)
+13:04:41.571046 [info ]: Cached model count updated: 12 models (accurate)
+13:04:46.491751 [info ]: Cached model count updated: 12 models (estimate)
+13:04:46.514276 [info ]: Cached model count updated: 12 models (accurate)
+13:04:46.514489 [debug]: Incremental compilation - 4 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:04:46.515689 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:04:46.624686 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:04:46.630841 [info ]: Cached model count updated: 12 models (accurate)
+13:04:46.829974 [info ]: Cached model count updated: 12 models (estimate)
+13:04:46.830292 [info ]: Cached model count updated: 12 models (accurate)
+13:05:11.133761 [info ]: Cached model count updated: 12 models (estimate)
+13:05:11.158500 [info ]: Cached model count updated: 12 models (accurate)
+13:05:11.158764 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:05:11.159989 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:05:11.294287 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:05:11.301149 [info ]: Cached model count updated: 12 models (accurate)
+13:05:11.469757 [info ]: Cached model count updated: 12 models (estimate)
+13:05:11.470301 [info ]: Cached model count updated: 12 models (accurate)
+13:05:15.037618 [info ]: Cached model count updated: 12 models (estimate)
+13:05:15.063050 [info ]: Cached model count updated: 12 models (accurate)
+13:05:15.063316 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:05:15.064538 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:05:15.202077 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:05:15.210168 [info ]: Cached model count updated: 12 models (accurate)
+13:05:15.366046 [info ]: Cached model count updated: 12 models (estimate)
+13:05:15.366384 [info ]: Cached model count updated: 12 models (accurate)
+13:05:33.237464 [info ]: Cached model count updated: 12 models (estimate)
+13:05:33.265276 [info ]: Cached model count updated: 12 models (accurate)
+13:05:33.265535 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:05:33.266774 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:05:33.408585 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:05:33.415033 [info ]: Cached model count updated: 12 models (accurate)
+13:05:33.616198 [info ]: Cached model count updated: 12 models (estimate)
+13:05:33.616545 [info ]: Cached model count updated: 12 models (accurate)
+13:05:34.302501 [info ]: Cached model count updated: 12 models (estimate)
+13:05:34.334569 [info ]: Cached model count updated: 12 models (accurate)
+13:05:34.334821 [debug]: Incremental compilation - 4 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:05:34.336086 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:05:34.461809 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:05:34.470278 [info ]: Cached model count updated: 12 models (accurate)
+13:05:34.645595 [info ]: Cached model count updated: 12 models (estimate)
+13:05:34.646009 [info ]: Cached model count updated: 12 models (accurate)
+13:05:35.679148 [info ]: Cached model count updated: 12 models (estimate)
+13:05:35.701815 [info ]: Cached model count updated: 12 models (accurate)
+13:05:35.702014 [debug]: Incremental compilation - 3 nodes selected: {"model.udemy_analytics.dim_date", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:05:35.702968 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:05:35.829622 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:05:35.836154 [info ]: Cached model count updated: 12 models (accurate)
+13:05:36.039730 [info ]: Cached model count updated: 12 models (estimate)
+13:05:36.040077 [info ]: Cached model count updated: 12 models (accurate)
+13:05:37.049633 [info ]: Cached model count updated: 12 models (estimate)
+13:05:37.073415 [info ]: Cached model count updated: 12 models (accurate)
+13:05:37.073736 [debug]: Incremental compilation - 4 nodes selected: {"model.udemy_analytics.dim_course", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:05:37.075140 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:05:37.217591 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:05:37.223606 [info ]: Cached model count updated: 12 models (accurate)
+13:05:37.389852 [info ]: Cached model count updated: 12 models (estimate)
+13:05:37.390191 [info ]: Cached model count updated: 12 models (accurate)
+13:05:38.130122 [info ]: Cached model count updated: 12 models (estimate)
+13:05:38.154574 [info ]: Cached model count updated: 12 models (accurate)
+13:05:38.154811 [debug]: Incremental compilation - 4 nodes selected: {"model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:05:38.156072 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:05:38.299539 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:05:38.307641 [info ]: Cached model count updated: 12 models (accurate)
+13:05:38.472335 [info ]: Cached model count updated: 12 models (estimate)
+13:05:38.472740 [info ]: Cached model count updated: 12 models (accurate)
+13:05:38.923060 [info ]: Cached model count updated: 12 models (estimate)
+13:05:38.960861 [info ]: Cached model count updated: 12 models (accurate)
+13:05:38.961107 [debug]: Incremental compilation - 3 nodes selected: {"model.udemy_analytics.dim_instructor", "model.udemy_analytics.stg_instructors", "source.udemy_analytics.raw.instructors"}
+13:05:38.962544 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:05:39.101429 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.instructors' (Missing schema for 'source.udemy_analytics.raw.instructors' (Expected at db/schemas/udemy_dw/raw/instructors).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:05:39.108783 [info ]: Cached model count updated: 12 models (accurate)
+13:05:39.264277 [info ]: Cached model count updated: 12 models (estimate)
+13:05:39.264616 [info ]: Cached model count updated: 12 models (accurate)
+13:05:39.864947 [info ]: Cached model count updated: 12 models (estimate)
+13:05:39.896943 [info ]: Cached model count updated: 12 models (accurate)
+13:05:39.897259 [debug]: Incremental compilation - 3 nodes selected: {"model.udemy_analytics.dim_date", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:05:39.898961 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:05:40.059375 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:05:40.067299 [info ]: Cached model count updated: 12 models (accurate)
+13:05:40.213203 [info ]: Cached model count updated: 12 models (estimate)
+13:05:40.213623 [info ]: Cached model count updated: 12 models (accurate)
+13:05:40.933190 [info ]: Cached model count updated: 12 models (estimate)
+13:05:40.967998 [info ]: Cached model count updated: 12 models (accurate)
+13:05:40.968353 [debug]: Incremental compilation - 3 nodes selected: {"model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.price_tracker"}
+13:05:40.969486 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:05:41.092692 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.price_tracker' (Missing schema for 'source.udemy_analytics.raw.price_tracker' (Expected at db/schemas/udemy_dw/raw/price_tracker).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:05:41.098843 [info ]: Cached model count updated: 12 models (accurate)
+13:05:41.267411 [info ]: Cached model count updated: 12 models (estimate)
+13:05:41.267801 [info ]: Cached model count updated: 12 models (accurate)
+13:05:41.852966 [info ]: Cached model count updated: 12 models (estimate)
+13:05:41.884125 [info ]: Cached model count updated: 12 models (accurate)
+13:05:41.884310 [debug]: Incremental compilation - 3 nodes selected: {"model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:05:41.885327 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:05:42.007488 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:05:42.014479 [info ]: Cached model count updated: 12 models (accurate)
+13:05:42.199844 [info ]: Cached model count updated: 12 models (estimate)
+13:05:42.200322 [info ]: Cached model count updated: 12 models (accurate)
+13:28:39.963359 [info ]: Cached model count updated: 12 models (estimate)
+13:28:40.010578 [info ]: Cached model count updated: 12 models (accurate)
+13:28:40.010904 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:28:40.012491 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:28:40.158664 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:28:40.168326 [info ]: Cached model count updated: 12 models (accurate)
+13:28:40.296287 [info ]: Cached model count updated: 12 models (estimate)
+13:28:40.296631 [info ]: Cached model count updated: 12 models (accurate)
+13:28:45.082527 [info ]: Cached model count updated: 12 models (estimate)
+13:28:45.117295 [info ]: Cached model count updated: 12 models (accurate)
+13:28:45.117694 [debug]: Incremental compilation - 13 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+13:28:45.119411 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:28:45.250089 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.instructors' (Missing schema for 'source.udemy_analytics.raw.instructors' (Expected at db/schemas/udemy_dw/raw/instructors).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:28:45.250203 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.price_tracker' (Missing schema for 'source.udemy_analytics.raw.price_tracker' (Expected at db/schemas/udemy_dw/raw/price_tracker).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:28:45.250248 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:28:45.258151 [info ]: Cached model count updated: 12 models (accurate)
+13:28:45.419423 [info ]: Cached model count updated: 12 models (estimate)
+13:28:45.419767 [info ]: Cached model count updated: 12 models (accurate)
+13:28:51.299207 [info ]: Cached model count updated: 12 models (estimate)
+13:28:51.323798 [info ]: Cached model count updated: 12 models (accurate)
+13:28:51.324147 [debug]: Incremental compilation - 13 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+13:28:51.325424 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:28:51.442946 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.instructors' (Missing schema for 'source.udemy_analytics.raw.instructors' (Expected at db/schemas/udemy_dw/raw/instructors).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:28:51.443030 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.price_tracker' (Missing schema for 'source.udemy_analytics.raw.price_tracker' (Expected at db/schemas/udemy_dw/raw/price_tracker).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:28:51.443063 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:28:51.449366 [info ]: Cached model count updated: 12 models (accurate)
+13:28:51.633398 [info ]: Cached model count updated: 12 models (estimate)
+13:28:51.633746 [info ]: Cached model count updated: 12 models (accurate)
+13:30:30.946956 [info ]: Cached model count updated: 12 models (estimate)
+13:30:30.982670 [info ]: Cached model count updated: 12 models (accurate)
+13:30:30.982949 [debug]: Incremental compilation - 13 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+13:30:30.984413 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:30:31.167040 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.instructors' (Missing schema for 'source.udemy_analytics.raw.instructors' (Expected at db/schemas/udemy_dw/raw/instructors).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:30:31.167180 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.price_tracker' (Missing schema for 'source.udemy_analytics.raw.price_tracker' (Expected at db/schemas/udemy_dw/raw/price_tracker).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:30:31.167247 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:30:31.175615 [info ]: Cached model count updated: 12 models (accurate)
+13:30:31.294073 [info ]: Cached model count updated: 12 models (estimate)
+13:30:31.294404 [info ]: Cached model count updated: 12 models (accurate)
+13:30:33.919698 [info ]: Cached model count updated: 12 models (estimate)
+13:30:33.947743 [info ]: Cached model count updated: 12 models (accurate)
+13:30:33.948027 [debug]: Incremental compilation - 7 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:30:33.949248 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:30:34.084325 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:30:34.085133 [error]: dbt1053: Missing schema for 'model.udemy_analytics.stg_price_tracker' (Expected at db/schemas/udemy_dw/public_staging/stg_price_tracker).
+Hint: run `db run` to build upstreams.
+13:30:34.085197 [error]: dbt1053: Missing schema for 'model.udemy_analytics.bridge_course_instructors' (Expected at db/schemas/udemy_dw/public_marts/bridge_course_instructors).
+Hint: run `db run` to build upstreams.
+13:30:34.085221 [error]: dbt1053: Missing schema for 'model.udemy_analytics.dim_instructor' (Expected at db/schemas/udemy_dw/public_marts/dim_instructor).
+Hint: run `db run` to build upstreams.
+13:30:34.092570 [info ]: Cached model count updated: 12 models (accurate)
+13:30:34.269105 [info ]: Cached model count updated: 12 models (estimate)
+13:30:34.269461 [info ]: Cached model count updated: 12 models (accurate)
+13:30:36.048687 [info ]: Cached model count updated: 12 models (estimate)
+13:30:36.072226 [info ]: Cached model count updated: 12 models (accurate)
+13:30:36.072494 [debug]: Incremental compilation - 7 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:30:36.073584 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:30:36.210291 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:30:36.210444 [error]: dbt1053: Missing schema for 'model.udemy_analytics.bridge_course_instructors' (Expected at db/schemas/udemy_dw/public_marts/bridge_course_instructors).
+Hint: run `db run` to build upstreams.
+13:30:36.210476 [error]: dbt1053: Missing schema for 'model.udemy_analytics.dim_instructor' (Expected at db/schemas/udemy_dw/public_marts/dim_instructor).
+Hint: run `db run` to build upstreams.
+13:30:36.210497 [error]: dbt1053: Missing schema for 'model.udemy_analytics.stg_price_tracker' (Expected at db/schemas/udemy_dw/public_staging/stg_price_tracker).
+Hint: run `db run` to build upstreams.
+13:30:36.217415 [info ]: Cached model count updated: 12 models (accurate)
+13:30:36.444794 [info ]: Cached model count updated: 12 models (estimate)
+13:30:36.445309 [info ]: Cached model count updated: 12 models (accurate)
+13:30:37.449105 [info ]: Cached model count updated: 12 models (estimate)
+13:30:37.471540 [info ]: Cached model count updated: 12 models (accurate)
+13:30:37.471905 [debug]: Incremental compilation - 13 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+13:30:37.473649 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:30:37.604933 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.instructors' (Missing schema for 'source.udemy_analytics.raw.instructors' (Expected at db/schemas/udemy_dw/raw/instructors).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:30:37.605078 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.price_tracker' (Missing schema for 'source.udemy_analytics.raw.price_tracker' (Expected at db/schemas/udemy_dw/raw/price_tracker).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:30:37.605171 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:30:37.613166 [info ]: Cached model count updated: 12 models (accurate)
+13:30:37.791646 [info ]: Cached model count updated: 12 models (estimate)
+13:30:37.792072 [info ]: Cached model count updated: 12 models (accurate)
+13:31:00.998725 [info ]: Cached model count updated: 12 models (estimate)
+13:31:01.019672 [info ]: Cached model count updated: 12 models (accurate)
+13:31:01.019912 [debug]: Incremental compilation - 13 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+13:31:01.020906 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:31:01.128374 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.instructors' (Missing schema for 'source.udemy_analytics.raw.instructors' (Expected at db/schemas/udemy_dw/raw/instructors).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:31:01.128484 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.price_tracker' (Missing schema for 'source.udemy_analytics.raw.price_tracker' (Expected at db/schemas/udemy_dw/raw/price_tracker).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:31:01.128539 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:31:01.135328 [info ]: Cached model count updated: 12 models (accurate)
+13:31:01.332757 [info ]: Cached model count updated: 12 models (estimate)
+13:31:01.333137 [info ]: Cached model count updated: 12 models (accurate)
+13:31:03.802911 [info ]: Cached model count updated: 12 models (estimate)
+13:31:03.823888 [info ]: Cached model count updated: 12 models (accurate)
+13:31:03.824179 [debug]: Incremental compilation - 13 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+13:31:03.825296 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:31:03.942219 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.instructors' (Missing schema for 'source.udemy_analytics.raw.instructors' (Expected at db/schemas/udemy_dw/raw/instructors).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:31:03.942422 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.price_tracker' (Missing schema for 'source.udemy_analytics.raw.price_tracker' (Expected at db/schemas/udemy_dw/raw/price_tracker).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:31:03.942482 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:31:03.951093 [info ]: Cached model count updated: 12 models (accurate)
+13:31:04.148417 [info ]: Cached model count updated: 12 models (estimate)
+13:31:04.148765 [info ]: Cached model count updated: 12 models (accurate)
+13:31:05.086217 [info ]: Cached model count updated: 12 models (estimate)
+13:31:05.107656 [info ]: Cached model count updated: 12 models (accurate)
+13:31:05.108021 [debug]: Incremental compilation - 13 nodes selected: {"model.udemy_analytics.bridge_course_instructors", "model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_instructor", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "model.udemy_analytics.stg_instructors", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.courses", "source.udemy_analytics.raw.instructors", "source.udemy_analytics.raw.price_tracker"}
+13:31:05.109106 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:31:05.226186 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.instructors' (Missing schema for 'source.udemy_analytics.raw.instructors' (Expected at db/schemas/udemy_dw/raw/instructors).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:31:05.226312 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.price_tracker' (Missing schema for 'source.udemy_analytics.raw.price_tracker' (Expected at db/schemas/udemy_dw/raw/price_tracker).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:31:05.226365 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:31:05.233134 [info ]: Cached model count updated: 12 models (accurate)
+13:31:05.425182 [info ]: Cached model count updated: 12 models (estimate)
+13:31:05.425513 [info ]: Cached model count updated: 12 models (accurate)
+13:31:07.377374 [info ]: Cached model count updated: 12 models (estimate)
+13:31:07.399966 [info ]: Cached model count updated: 12 models (accurate)
+13:31:07.400194 [debug]: Incremental compilation - 7 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:31:07.401187 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:31:07.523712 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:31:07.523849 [error]: dbt1053: Missing schema for 'model.udemy_analytics.dim_instructor' (Expected at db/schemas/udemy_dw/public_marts/dim_instructor).
+Hint: run `db run` to build upstreams.
+13:31:07.523873 [error]: dbt1053: Missing schema for 'model.udemy_analytics.stg_price_tracker' (Expected at db/schemas/udemy_dw/public_staging/stg_price_tracker).
+Hint: run `db run` to build upstreams.
+13:31:07.523896 [error]: dbt1053: Missing schema for 'model.udemy_analytics.bridge_course_instructors' (Expected at db/schemas/udemy_dw/public_marts/bridge_course_instructors).
+Hint: run `db run` to build upstreams.
+13:31:07.531010 [info ]: Cached model count updated: 12 models (accurate)
+13:31:07.712444 [info ]: Cached model count updated: 12 models (estimate)
+13:31:07.712877 [info ]: Cached model count updated: 12 models (accurate)
+13:31:08.164539 [info ]: Cached model count updated: 12 models (estimate)
+13:31:08.189033 [info ]: Cached model count updated: 12 models (accurate)
+13:31:08.189324 [debug]: Incremental compilation - 5 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:31:08.190611 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:31:08.326104 [error]: dbt1053: Missing schema for 'model.udemy_analytics.dim_instructor' (Expected at db/schemas/udemy_dw/public_marts/dim_instructor).
+Hint: run `db run` to build upstreams.
+13:31:08.326179 [error]: dbt1053: Missing schema for 'model.udemy_analytics.stg_price_tracker' (Expected at db/schemas/udemy_dw/public_staging/stg_price_tracker).
+Hint: run `db run` to build upstreams.
+13:31:08.326216 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:31:08.326343 [error]: dbt1053: Missing schema for 'model.udemy_analytics.bridge_course_instructors' (Expected at db/schemas/udemy_dw/public_marts/bridge_course_instructors).
+Hint: run `db run` to build upstreams.
+13:31:08.332901 [info ]: Cached model count updated: 12 models (accurate)
+13:31:08.629887 [info ]: Cached model count updated: 12 models (estimate)
+13:31:08.630219 [info ]: Cached model count updated: 12 models (accurate)
+13:49:34.455606 [info ]: Cached model count updated: 12 models (estimate)
+13:49:34.497898 [info ]: Cached model count updated: 12 models (accurate)
+13:49:34.498133 [debug]: Incremental compilation - 3 nodes selected: {"model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.price_tracker"}
+13:49:34.499831 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:49:34.635191 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.price_tracker' (Missing schema for 'source.udemy_analytics.raw.price_tracker' (Expected at db/schemas/udemy_dw/raw/price_tracker).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:49:34.646194 [info ]: Cached model count updated: 12 models (accurate)
+13:49:34.780804 [info ]: Cached model count updated: 12 models (estimate)
+13:49:34.781193 [info ]: Cached model count updated: 12 models (accurate)
+13:50:25.120532 [info ]: Cached model count updated: 12 models (estimate)
+13:50:25.143259 [info ]: Cached model count updated: 12 models (accurate)
+13:50:25.143445 [debug]: Incremental compilation - 3 nodes selected: {"model.udemy_analytics.fct_price_history", "model.udemy_analytics.stg_price_tracker", "source.udemy_analytics.raw.price_tracker"}
+13:50:25.144481 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:50:25.257440 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.price_tracker' (Missing schema for 'source.udemy_analytics.raw.price_tracker' (Expected at db/schemas/udemy_dw/raw/price_tracker).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:50:25.263782 [info ]: Cached model count updated: 12 models (accurate)
+13:50:25.454528 [info ]: Cached model count updated: 12 models (estimate)
+13:50:25.454873 [info ]: Cached model count updated: 12 models (accurate)
+13:50:26.732740 [info ]: Cached model count updated: 12 models (estimate)
+13:50:26.763757 [info ]: Cached model count updated: 12 models (accurate)
+13:50:26.763951 [debug]: Incremental compilation - 3 nodes selected: {"model.udemy_analytics.fct_course_snapshot", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:50:26.764935 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:50:26.882332 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:50:26.888736 [info ]: Cached model count updated: 12 models (accurate)
+13:50:27.072705 [info ]: Cached model count updated: 12 models (estimate)
+13:50:27.073013 [info ]: Cached model count updated: 12 models (accurate)
+13:50:27.638590 [info ]: Cached model count updated: 12 models (estimate)
+13:50:27.662293 [info ]: Cached model count updated: 12 models (accurate)
+13:50:27.662615 [debug]: Incremental compilation - 4 nodes selected: {"model.udemy_analytics.dim_course", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:50:27.664102 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:50:27.786738 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:50:27.793502 [info ]: Cached model count updated: 12 models (accurate)
+13:50:27.957924 [info ]: Cached model count updated: 12 models (estimate)
+13:50:27.958213 [info ]: Cached model count updated: 12 models (accurate)
+13:50:34.444469 [info ]: Cached model count updated: 12 models (estimate)
+13:50:34.473485 [info ]: Cached model count updated: 12 models (accurate)
+13:50:34.473678 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:50:34.474602 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:50:34.585507 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:50:34.591783 [info ]: Cached model count updated: 12 models (accurate)
+13:50:34.783287 [info ]: Cached model count updated: 12 models (estimate)
+13:50:34.783629 [info ]: Cached model count updated: 12 models (accurate)
+13:50:35.704676 [info ]: Cached model count updated: 12 models (estimate)
+13:50:35.727722 [info ]: Cached model count updated: 12 models (accurate)
+13:50:35.728031 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:50:35.729441 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:50:35.844104 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:50:35.851375 [info ]: Cached model count updated: 12 models (accurate)
+13:50:36.023861 [info ]: Cached model count updated: 12 models (estimate)
+13:50:36.066582 [info ]: Cached model count updated: 12 models (estimate)
+13:50:36.085502 [info ]: Cached model count updated: 12 models (accurate)
+13:50:36.085708 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:50:36.086625 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:50:36.196837 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:50:36.202177 [info ]: Cached model count updated: 12 models (accurate)
+13:50:36.233264 [info ]: Cached model count updated: 12 models (estimate)
+13:50:36.253104 [info ]: Cached model count updated: 12 models (accurate)
+13:50:36.253317 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:50:36.254310 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:50:36.367062 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:50:36.372272 [info ]: Cached model count updated: 12 models (accurate)
+13:50:36.404487 [info ]: Cached model count updated: 12 models (estimate)
+13:50:36.424204 [info ]: Cached model count updated: 12 models (accurate)
+13:50:36.424424 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:50:36.425798 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:50:36.545712 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:50:36.551702 [info ]: Cached model count updated: 12 models (accurate)
+13:50:36.577172 [info ]: Cached model count updated: 12 models (estimate)
+13:50:36.596936 [info ]: Cached model count updated: 12 models (accurate)
+13:50:36.597160 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:50:36.598545 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:50:36.707442 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:50:36.713841 [info ]: Cached model count updated: 12 models (accurate)
+13:50:36.742537 [info ]: Cached model count updated: 12 models (estimate)
+13:50:36.764733 [info ]: Cached model count updated: 12 models (accurate)
+13:50:36.764980 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:50:36.766173 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:50:36.884916 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:50:36.890485 [info ]: Cached model count updated: 12 models (accurate)
+13:50:36.919307 [info ]: Cached model count updated: 12 models (estimate)
+13:50:36.944789 [info ]: Cached model count updated: 12 models (accurate)
+13:50:36.945016 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:50:36.946439 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:50:37.067316 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:50:37.090160 [info ]: Cached model count updated: 12 models (estimate)
+13:50:37.110520 [info ]: Cached model count updated: 12 models (accurate)
+13:50:37.110728 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:50:37.111704 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:50:37.223065 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:50:37.228182 [info ]: Cached model count updated: 12 models (accurate)
+13:50:37.251149 [info ]: Cached model count updated: 12 models (estimate)
+13:50:37.279330 [info ]: Cached model count updated: 12 models (accurate)
+13:50:37.279560 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:50:37.280708 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:50:37.393325 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:50:37.399983 [info ]: Cached model count updated: 12 models (accurate)
+13:50:37.426429 [info ]: Cached model count updated: 12 models (estimate)
+13:50:37.448579 [info ]: Cached model count updated: 12 models (accurate)
+13:50:37.448791 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:50:37.449756 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:50:37.584519 [info ]: Cached model count updated: 12 models (estimate)
+13:50:37.605609 [info ]: Cached model count updated: 12 models (accurate)
+13:50:37.605827 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:50:37.607180 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:50:37.731571 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:50:37.737615 [info ]: Cached model count updated: 12 models (accurate)
+13:50:37.966402 [info ]: Cached model count updated: 12 models (estimate)
+13:50:37.966716 [info ]: Cached model count updated: 12 models (accurate)
+13:52:09.803304 [info ]: Cached model count updated: 12 models (estimate)
+13:52:09.825116 [info ]: Cached model count updated: 12 models (accurate)
+13:52:09.825336 [debug]: Incremental compilation - 6 nodes selected: {"model.udemy_analytics.dim_category", "model.udemy_analytics.dim_course", "model.udemy_analytics.dim_language", "model.udemy_analytics.dim_level", "model.udemy_analytics.stg_courses", "source.udemy_analytics.raw.courses"}
+13:52:09.826499 [warn ]: dbt1050: No metadata adapter found for adapter type postgres
+13:52:09.943679 [error]: dbt1053: Remote execution: failed to hydrate schema for source 'source.udemy_analytics.raw.courses' (Missing schema for 'source.udemy_analytics.raw.courses' (Expected at db/schemas/udemy_dw/raw/courses).
+Hint: run `db seed` if seeds map to sources, or `db sample --persist local ..` to pull sample source data.).
+Schemas should be fetched during pre-compile (Downloading Schemas).
+Ensure remote connectivity/permissions or retry with '--static-analysis off' if appropriate.
+13:52:09.952108 [info ]: Cached model count updated: 12 models (accurate)

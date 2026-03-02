@@ -1,0 +1,28 @@
+name: 'udemy_analytics'
+version: '1.0.0'
+config-version: 2
+
+# Profile này sẽ khớp với tên trong profiles.yml
+profile: 'udemy_analytics'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  udemy_analytics:
+    # Cấu hình materialized mặc định
+    staging:
+      +materialized: view
+      +schema: staging
+    marts:
+      +materialized: table
+      +schema: marts

@@ -1,0 +1,30 @@
+[2025-12-05T19:31:41.255+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TEST_DataScience_Page287.prepare_login_custom manual__2025-12-05T19:31:40.225314+00:00 [queued]>
+[2025-12-05T19:31:41.269+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TEST_DataScience_Page287.prepare_login_custom manual__2025-12-05T19:31:40.225314+00:00 [queued]>
+[2025-12-05T19:31:41.269+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-05T19:31:41.286+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): prepare_login_custom> on 2025-12-05 19:31:40.225314+00:00
+[2025-12-05T19:31:41.295+0000] {standard_task_runner.py:60} INFO - Started process 10319 to run task
+[2025-12-05T19:31:41.299+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'TEST_DataScience_Page287', 'prepare_login_custom', 'manual__2025-12-05T19:31:40.225314+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/udemy_test_DS_287.py', '--cfg-path', '/tmp/tmps89myhll']
+[2025-12-05T19:31:41.301+0000] {standard_task_runner.py:88} INFO - Job 18: Subtask prepare_login_custom
+[2025-12-05T19:31:41.367+0000] {task_command.py:423} INFO - Running <TaskInstance: TEST_DataScience_Page287.prepare_login_custom manual__2025-12-05T19:31:40.225314+00:00 [running]> on host a4bbc07b0b9a
+[2025-12-05T19:31:41.478+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='TEST_DataScience_Page287' AIRFLOW_CTX_TASK_ID='prepare_login_custom' AIRFLOW_CTX_EXECUTION_DATE='2025-12-05T19:31:40.225314+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-05T19:31:40.225314+00:00'
+[2025-12-05T19:31:41.480+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-12-05T19:31:41.482+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/project_scraper && xvfb-run --auto-servernum python3 /opt/***/project_scraper/udemy_login_auto.py']
+[2025-12-05T19:31:41.498+0000] {subprocess.py:86} INFO - Output:
+[2025-12-05T19:31:41.821+0000] {subprocess.py:93} INFO - [UDEMY LOGIN] 🔐 Dùng profile dir: /opt/***/udemy_profile
+[2025-12-05T19:31:41.821+0000] {subprocess.py:93} INFO - [UDEMY LOGIN] 👤 Email: huhi2048@gmail.com
+[2025-12-05T19:31:42.801+0000] {subprocess.py:93} INFO - [UDEMY LOGIN] 🌐 Mở trang chủ Udemy ...
+[2025-12-05T19:31:50.391+0000] {subprocess.py:93} INFO - [UDEMY LOGIN] ℹ️ Chưa login. Bắt đầu auto login...
+[2025-12-05T19:31:50.392+0000] {subprocess.py:93} INFO - [UDEMY LOGIN] 🌐 Mở trang login ...
+[2025-12-05T19:31:56.483+0000] {subprocess.py:93} INFO - [UDEMY LOGIN] ⌛ Đợi input email/password...
+[2025-12-05T19:32:56.506+0000] {subprocess.py:93} INFO - [UDEMY LOGIN] ❌ Lỗi thao tác: Page.wait_for_selector: Timeout 60000ms exceeded.
+[2025-12-05T19:32:56.506+0000] {subprocess.py:93} INFO - Call log:
+[2025-12-05T19:32:56.507+0000] {subprocess.py:93} INFO -   - waiting for locator("input[name=\"password\"]") to be visible
+[2025-12-05T19:32:56.507+0000] {subprocess.py:93} INFO - 
+[2025-12-05T19:32:56.508+0000] {subprocess.py:93} INFO - 👉 Hãy thử điền tay trên trình duyệt đang mở...
+[2025-12-05T19:32:56.508+0000] {subprocess.py:93} INFO - [UDEMY LOGIN] ⏳ Đang chờ đăng nhập thành công (Tối đa 2 phút)...
+[2025-12-05T19:32:56.509+0000] {subprocess.py:93} INFO - ⚠️ NẾU THẤY CAPTCHA, HÃY GIẢI BẰNG TAY TRÊN TRÌNH DUYỆT NGAY!
+[2025-12-05T19:34:57.754+0000] {subprocess.py:93} INFO - [UDEMY LOGIN] ⚠️ Hết giờ. Chưa login được.
+[2025-12-05T19:34:58.072+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-12-05T19:34:58.099+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=TEST_DataScience_Page287, task_id=prepare_login_custom, execution_date=20251205T193140, start_date=20251205T193141, end_date=20251205T193458
+[2025-12-05T19:34:58.155+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-05T19:34:58.175+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

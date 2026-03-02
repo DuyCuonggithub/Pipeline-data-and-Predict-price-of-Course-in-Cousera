@@ -1,0 +1,121 @@
+[2025-12-04T17:30:53.160+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TEST_DataScience_Page287.run_scraper_custom_page manual__2025-12-04T17:29:06.913377+00:00 [queued]>
+[2025-12-04T17:30:53.169+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TEST_DataScience_Page287.run_scraper_custom_page manual__2025-12-04T17:29:06.913377+00:00 [queued]>
+[2025-12-04T17:30:53.169+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-04T17:30:53.182+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_scraper_custom_page> on 2025-12-04 17:29:06.913377+00:00
+[2025-12-04T17:30:53.189+0000] {standard_task_runner.py:60} INFO - Started process 773 to run task
+[2025-12-04T17:30:53.192+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'TEST_DataScience_Page287', 'run_scraper_custom_page', 'manual__2025-12-04T17:29:06.913377+00:00', '--job-id', '74', '--raw', '--subdir', 'DAGS_FOLDER/udemy_test_custom.py', '--cfg-path', '/tmp/tmpus2dwi2t']
+[2025-12-04T17:30:53.194+0000] {standard_task_runner.py:88} INFO - Job 74: Subtask run_scraper_custom_page
+[2025-12-04T17:30:53.258+0000] {task_command.py:423} INFO - Running <TaskInstance: TEST_DataScience_Page287.run_scraper_custom_page manual__2025-12-04T17:29:06.913377+00:00 [running]> on host 40292b25e0e0
+[2025-12-04T17:30:53.341+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='TEST_DataScience_Page287' AIRFLOW_CTX_TASK_ID='run_scraper_custom_page' AIRFLOW_CTX_EXECUTION_DATE='2025-12-04T17:29:06.913377+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-04T17:29:06.913377+00:00'
+[2025-12-04T17:30:53.342+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-12-04T17:30:53.347+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/project_scraper && xvfb-run --auto-servernum python3 /opt/***/project_scraper/udemy_scraper.py --job dashboard --group group3 --start-page 287 --test']
+[2025-12-04T17:30:53.361+0000] {subprocess.py:86} INFO - Output:
+[2025-12-04T17:30:55.880+0000] {subprocess.py:93} INFO - --- BẮT ĐẦU JOB: dashboard (Group: group3 | Start: 287) ---
+[2025-12-04T17:30:55.880+0000] {subprocess.py:93} INFO - [debug] Connection String: DefaultEndpoint...indows.net
+[2025-12-04T17:30:55.881+0000] {subprocess.py:93} INFO - [debug] Container Name: udemy-it
+[2025-12-04T17:30:55.881+0000] {subprocess.py:93} INFO - 
+[2025-12-04T17:30:55.882+0000] {subprocess.py:93} INFO - >>> CATEGORY: Data Science
+[2025-12-04T17:30:55.882+0000] {subprocess.py:93} INFO - 
+[2025-12-04T17:30:55.883+0000] {subprocess.py:93} INFO - [phase-1] 🕸️ Gom link trang 287 -> 326...
+[2025-12-04T17:30:57.459+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 1): https://www.udemy.com/courses/development/data-science/?p=287
+[2025-12-04T17:31:21.818+0000] {subprocess.py:93} INFO - [category] ✅ Tìm thấy 16 khóa học.
+[2025-12-04T17:31:22.858+0000] {subprocess.py:93} INFO - -> Page 287: +16 links
+[2025-12-04T17:31:23.740+0000] {subprocess.py:93} INFO - [FATAL ERROR] ☠️ Playwright Crash: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+[2025-12-04T17:31:23.740+0000] {subprocess.py:93} INFO - Browser logs:
+[2025-12-04T17:31:23.741+0000] {subprocess.py:93} INFO - 
+[2025-12-04T17:31:23.742+0000] {subprocess.py:93} INFO - <launching> /home/***/.cache/ms-playwright/chromium-1194/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --disable-blink-features=AutomationControlled --no-sandbox --disable-dev-shm-usage --window-size=1920,1080 --user-data-dir=/opt/***/project_scraper/udemy_profile_pw_fca23085 --remote-debugging-pipe about:blank
+[2025-12-04T17:31:23.743+0000] {subprocess.py:93} INFO - <launched> pid=1007
+[2025-12-04T17:31:23.743+0000] {subprocess.py:93} INFO - [pid=1007][err] [1007:1007:1204/173123.720009:ERROR:chrome/browser/process_singleton_posix.cc:358] The profile appears to be in use by another Chromium process (352) on another computer (f3f35f2f4677). Chromium has locked the profile so that it doesn't get corrupted. If you are sure no other processes are using this profile, you can unlock the profile and relaunch Chromium.
+[2025-12-04T17:31:23.743+0000] {subprocess.py:93} INFO - [pid=1007][err] [1007:1007:1204/173123.720493:ERROR:chrome/browser/ui/views/message_box_dialog.cc:199] Unable to show message box: Chromium - The profile appears to be in use by another Chromium process (352) on another computer (f3f35f2f4677). Chromium has locked the profile so that it doesn't get corrupted. If you are sure no other processes are using this profile, you can unlock the profile and relaunch Chromium.
+[2025-12-04T17:31:23.744+0000] {subprocess.py:93} INFO - Call log:
+[2025-12-04T17:31:23.744+0000] {subprocess.py:93} INFO -   - <launching> /home/***/.cache/ms-playwright/chromium-1194/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --disable-blink-features=AutomationControlled --no-sandbox --disable-dev-shm-usage --window-size=1920,1080 --user-data-dir=/opt/***/project_scraper/udemy_profile_pw_fca23085 --remote-debugging-pipe about:blank
+[2025-12-04T17:31:23.744+0000] {subprocess.py:93} INFO -   - <launched> pid=1007
+[2025-12-04T17:31:23.745+0000] {subprocess.py:93} INFO -   - [pid=1007][err] [1007:1007:1204/173123.720009:ERROR:chrome/browser/process_singleton_posix.cc:358] The profile appears to be in use by another Chromium process (352) on another computer (f3f35f2f4677). Chromium has locked the profile so that it doesn't get corrupted. If you are sure no other processes are using this profile, you can unlock the profile and relaunch Chromium.
+[2025-12-04T17:31:23.745+0000] {subprocess.py:93} INFO -   - [pid=1007][err] [1007:1007:1204/173123.720493:ERROR:chrome/browser/ui/views/message_box_dialog.cc:199] Unable to show message box: Chromium - The profile appears to be in use by another Chromium process (352) on another computer (f3f35f2f4677). Chromium has locked the profile so that it doesn't get corrupted. If you are sure no other processes are using this profile, you can unlock the profile and relaunch Chromium.
+[2025-12-04T17:31:23.745+0000] {subprocess.py:93} INFO -   - [pid=1007] <gracefully close start>
+[2025-12-04T17:31:23.746+0000] {subprocess.py:93} INFO -   - [pid=1007] <kill>
+[2025-12-04T17:31:23.746+0000] {subprocess.py:93} INFO -   - [pid=1007] <will force kill>
+[2025-12-04T17:31:23.747+0000] {subprocess.py:93} INFO -   - [pid=1007] <process did exit: exitCode=21, signal=null>
+[2025-12-04T17:31:23.747+0000] {subprocess.py:93} INFO -   - [pid=1007] starting temporary directories cleanup
+[2025-12-04T17:31:23.747+0000] {subprocess.py:93} INFO -   - [pid=1007] finished temporary directories cleanup
+[2025-12-04T17:31:23.748+0000] {subprocess.py:93} INFO -   - [pid=1007] <gracefully close end>
+[2025-12-04T17:31:23.748+0000] {subprocess.py:93} INFO - 
+[2025-12-04T17:31:24.455+0000] {subprocess.py:93} INFO - ⚠️ Trang 288 thiếu dữ liệu: 0 link. (Streak: 1/2)
+[2025-12-04T17:31:24.456+0000] {subprocess.py:93} INFO - 🛑 TEST MODE: Đã chạy đủ 2 trang test (Start: 287).
+[2025-12-04T17:31:24.456+0000] {subprocess.py:93} INFO - 
+[2025-12-04T17:31:24.457+0000] {subprocess.py:93} INFO - [phase-2] 🚀 Parse & Save 16 khóa học...
+[2025-12-04T17:31:51.488+0000] {subprocess.py:93} INFO -   -> Progress: 16/16
+[2025-12-04T17:31:51.488+0000] {subprocess.py:93} INFO - 
+[2025-12-04T17:31:51.491+0000] {subprocess.py:93} INFO - [azure] ☁️ Đang upload: TEST_dashboard_group3_p287-289_20251204_173151 (16 khóa)...
+[2025-12-04T17:31:53.172+0000] {subprocess.py:93} INFO - [azure] ✅ Saved Courses: dashboard/TEST_dashboard_group3_p287-289_20251204_173151_courses.parquet
+[2025-12-04T17:31:53.226+0000] {subprocess.py:93} INFO - [azure] ✅ Saved Instructors: dashboard/TEST_dashboard_group3_p287-289_20251204_173151_instructors.parquet
+[2025-12-04T17:31:53.275+0000] {subprocess.py:93} INFO - [system] 🧹 RAM Cleaned.
+[2025-12-04T17:31:53.276+0000] {subprocess.py:93} INFO - 
+[2025-12-04T17:31:53.276+0000] {subprocess.py:93} INFO - >>> CATEGORY: Mobile Development
+[2025-12-04T17:31:53.277+0000] {subprocess.py:93} INFO - 
+[2025-12-04T17:31:53.277+0000] {subprocess.py:93} INFO - [phase-1] 🕸️ Gom link trang 287 -> 326...
+[2025-12-04T17:31:55.002+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 1): https://www.udemy.com/courses/development/mobile-apps/?p=287
+[2025-12-04T17:32:17.435+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T17:32:17.436+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 2): https://www.udemy.com/courses/development/mobile-apps/?p=287
+[2025-12-04T17:32:47.182+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T17:32:47.182+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 3): https://www.udemy.com/courses/development/mobile-apps/?p=287
+[2025-12-04T17:33:13.699+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T17:33:14.995+0000] {subprocess.py:93} INFO - [debug] 📸 Screenshot saved: /opt/***/project_scraper/log/_DEBUG_EMPTY_FINAL_20251204_173313.png
+[2025-12-04T17:33:16.131+0000] {subprocess.py:93} INFO - ⚠️ Trang 287 thiếu dữ liệu: 0 link. (Streak: 1/2)
+[2025-12-04T17:33:17.781+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 1): https://www.udemy.com/courses/development/mobile-apps/?p=288
+[2025-12-04T17:33:45.863+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T17:33:45.864+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 2): https://www.udemy.com/courses/development/mobile-apps/?p=288
+[2025-12-04T17:34:12.870+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T17:34:12.870+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 3): https://www.udemy.com/courses/development/mobile-apps/?p=288
+[2025-12-04T17:34:40.513+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T17:34:41.113+0000] {subprocess.py:93} INFO - [debug] 📸 Screenshot saved: /opt/***/project_scraper/log/_DEBUG_EMPTY_FINAL_20251204_173440.png
+[2025-12-04T17:34:42.402+0000] {subprocess.py:93} INFO - ⚠️ Trang 288 thiếu dữ liệu: 0 link. (Streak: 2/2)
+[2025-12-04T17:34:42.403+0000] {subprocess.py:93} INFO - 🛑 Dừng Category 'Mobile Development'.
+[2025-12-04T17:34:42.403+0000] {subprocess.py:93} INFO - 
+[2025-12-04T17:34:42.404+0000] {subprocess.py:93} INFO - >>> CATEGORY: Game Development
+[2025-12-04T17:34:42.404+0000] {subprocess.py:93} INFO - 
+[2025-12-04T17:34:42.405+0000] {subprocess.py:93} INFO - [phase-1] 🕸️ Gom link trang 287 -> 326...
+[2025-12-04T17:34:44.023+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 1): https://www.udemy.com/courses/development/game-development/?p=287
+[2025-12-04T17:35:08.978+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T17:35:08.979+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 2): https://www.udemy.com/courses/development/game-development/?p=287
+[2025-12-04T17:35:40.202+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T17:35:40.203+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 3): https://www.udemy.com/courses/development/game-development/?p=287
+[2025-12-04T17:36:09.968+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T17:36:11.464+0000] {subprocess.py:93} INFO - [debug] 📸 Screenshot saved: /opt/***/project_scraper/log/_DEBUG_EMPTY_FINAL_20251204_173609.png
+[2025-12-04T17:36:12.608+0000] {subprocess.py:93} INFO - ⚠️ Trang 287 thiếu dữ liệu: 0 link. (Streak: 1/2)
+[2025-12-04T17:36:14.244+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 1): https://www.udemy.com/courses/development/game-development/?p=288
+[2025-12-04T17:36:35.813+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T17:36:35.814+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 2): https://www.udemy.com/courses/development/game-development/?p=288
+[2025-12-04T17:37:03.254+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T17:37:03.254+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 3): https://www.udemy.com/courses/development/game-development/?p=288
+[2025-12-04T17:37:30.982+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T17:37:31.485+0000] {subprocess.py:93} INFO - [debug] 📸 Screenshot saved: /opt/***/project_scraper/log/_DEBUG_EMPTY_FINAL_20251204_173730.png
+[2025-12-04T17:37:32.703+0000] {subprocess.py:93} INFO - ⚠️ Trang 288 thiếu dữ liệu: 0 link. (Streak: 2/2)
+[2025-12-04T17:37:32.704+0000] {subprocess.py:93} INFO - 🛑 Dừng Category 'Game Development'.
+[2025-12-04T17:37:32.704+0000] {subprocess.py:93} INFO - 
+[2025-12-04T17:37:32.704+0000] {subprocess.py:93} INFO - >>> CATEGORY: Software Development Tools
+[2025-12-04T17:37:32.705+0000] {subprocess.py:93} INFO - 
+[2025-12-04T17:37:32.705+0000] {subprocess.py:93} INFO - [phase-1] 🕸️ Gom link trang 287 -> 326...
+[2025-12-04T17:37:34.771+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 1): https://www.udemy.com/courses/development/development-tools/?p=287
+[2025-12-04T17:37:57.722+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T17:37:57.722+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 2): https://www.udemy.com/courses/development/development-tools/?p=287
+[2025-12-04T17:38:24.127+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T17:38:24.128+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 3): https://www.udemy.com/courses/development/development-tools/?p=287
+[2025-12-04T17:38:50.575+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T17:38:51.172+0000] {subprocess.py:93} INFO - [debug] 📸 Screenshot saved: /opt/***/project_scraper/log/_DEBUG_EMPTY_FINAL_20251204_173850.png
+[2025-12-04T17:38:52.700+0000] {subprocess.py:93} INFO - ⚠️ Trang 287 thiếu dữ liệu: 0 link. (Streak: 1/2)
+[2025-12-04T17:38:54.771+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 1): https://www.udemy.com/courses/development/development-tools/?p=288
+[2025-12-04T17:39:19.369+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T17:39:19.370+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 2): https://www.udemy.com/courses/development/development-tools/?p=288
+[2025-12-04T17:39:46.861+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T17:39:46.862+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 3): https://www.udemy.com/courses/development/development-tools/?p=288
+[2025-12-04T17:40:14.209+0000] {subprocess.py:93} INFO - [category] ⚠️ Tìm thấy 0 link.
+[2025-12-04T17:40:14.766+0000] {subprocess.py:93} INFO - [debug] 📸 Screenshot saved: /opt/***/project_scraper/log/_DEBUG_EMPTY_FINAL_20251204_174014.png
+[2025-12-04T17:40:15.862+0000] {subprocess.py:93} INFO - ⚠️ Trang 288 thiếu dữ liệu: 0 link. (Streak: 2/2)
+[2025-12-04T17:40:15.863+0000] {subprocess.py:93} INFO - 🛑 Dừng Category 'Software Development Tools'.
+[2025-12-04T17:40:15.863+0000] {subprocess.py:93} INFO - 
+[2025-12-04T17:40:15.863+0000] {subprocess.py:93} INFO - --- [HOÀN TẤT JOB] ---
+[2025-12-04T17:40:16.215+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-12-04T17:40:16.282+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=TEST_DataScience_Page287, task_id=run_scraper_custom_page, execution_date=20251204T172906, start_date=20251204T173053, end_date=20251204T174016
+[2025-12-04T17:40:16.339+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-04T17:40:16.369+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

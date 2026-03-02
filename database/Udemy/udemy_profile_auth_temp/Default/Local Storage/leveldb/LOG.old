@@ -1,0 +1,3 @@
+2025/12/06-06:31:54.509 6991 Reusing MANIFEST /opt/airflow/udemy_profile/Default/Local Storage/leveldb/MANIFEST-000001
+2025/12/06-06:31:54.552 6991 Recovering log #4
+2025/12/06-06:31:54.566 6991 Reusing old log /opt/airflow/udemy_profile/Default/Local Storage/leveldb/000004.log 

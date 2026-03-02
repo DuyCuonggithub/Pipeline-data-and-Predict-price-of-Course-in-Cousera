@@ -1,0 +1,173 @@
+x-airflow-common:
+  &airflow-common
+  # Lưu ý: Chỉ build 1 lần ở webserver để tránh lỗi race condition
+  # build: . 
+  image: airflow-custom:latest
+  env_file:
+    - .env
+  environment:
+    &airflow-common-env
+    AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+    AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+    AIRFLOW__CORE__FERNET_KEY: ''
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    AIRFLOW_UID: 50000
+  volumes:
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+    - ./plugins:/opt/airflow/plugins
+    - ./:/opt/airflow/project_scraper
+    - ./udemy_profile:/opt/airflow/udemy_profile
+
+  user: "${AIRFLOW_UID:-50000}:0"
+  depends_on:
+    &airflow-common-depends-on
+    redis:
+      condition: service_healthy
+    postgres:
+      condition: service_healthy
+    # [MỚI] Airflow chờ Data Warehouse sẵn sàng
+    postgres_dw:
+      condition: service_healthy
+
+services:
+  # ==========================================
+  # 1. DATABASE HỆ THỐNG (METADATA AIRFLOW)
+  # ==========================================
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 5s
+      retries: 5
+      start_period: 5s
+    restart: always
+
+  # ==========================================
+  # [MỚI] 2. DATA WAREHOUSE (KHO DỮ LIỆU)
+  # ==========================================
+  postgres_dw:
+    image: postgres:15
+    container_name: udemy_data_warehouse
+    environment:
+      - POSTGRES_USER=user_dw          # User quản trị kho dữ liệu
+      - POSTGRES_PASSWORD=password_dw  # Mật khẩu kho dữ liệu
+      - POSTGRES_DB=udemy_dw           # Tên Database chính
+    ports:
+      # Map cổng 5432 trong Docker ra 5433 ngoài Windows
+      # Dùng DBeaver kết nối: localhost:5433
+      - "5433:5432"
+    volumes:
+      # Volume riêng để lưu dữ liệu cào
+      - dw_data_volume:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "user_dw", "-d", "udemy_dw"]
+      interval: 10s
+      retries: 5
+      start_period: 5s
+    restart: always
+    # Đảm bảo chung mạng với Airflow
+    networks:
+      - default
+
+  # ==========================================
+  # 3. REDIS (BROKER)
+  # ==========================================
+  redis:
+    image: redis:latest
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 30s
+      retries: 3
+    restart: always
+
+  # ==========================================
+  # 4. AIRFLOW SERVICES
+  # ==========================================
+  airflow-webserver:
+    <<: *airflow-common
+    # Chỉ Webserver chịu trách nhiệm Build Image
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    command: webserver
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+
+  airflow-scheduler:
+    <<: *airflow-common
+    # Không build lại để tránh lỗi 'already exists'
+    image: airflow-custom:latest 
+    command: scheduler
+    healthcheck:
+      test: ["CMD-SHELL", 'airflow jobs check --job-type SchedulerJob --hostname "$${HOSTNAME}"']
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+
+  airflow-worker:
+    <<: *airflow-common
+    image: airflow-custom:latest
+    command: celery worker
+    healthcheck:
+      test:
+        - "CMD-SHELL"
+        - 'celery --app airflow.executors.celery_executor.app inspect ping -d "celery@$${HOSTNAME}"'
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    environment:
+      <<: *airflow-common-env
+      DUMB_INIT_SETSID: "0"
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+
+  airflow-init:
+    <<: *airflow-common
+    image: airflow-custom:latest
+    command: version
+    environment:
+      <<: *airflow-common-env
+      _AIRFLOW_DB_MIGRATE: 'true'
+      _AIRFLOW_WWW_USER_CREATE: 'true'
+      _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME:-admin}
+      _AIRFLOW_WWW_USER_PASSWORD: ${_AIRFLOW_WWW_USER_PASSWORD:-admin}
+    user: "0:0"
+    volumes:
+      - ./:/opt/airflow/project_scraper
+
+volumes:
+  postgres-db-volume: # Metadata Airflow
+  dw_data_volume:     # [MỚI] Data Warehouse
+
+networks:
+  default:
+    driver: bridge

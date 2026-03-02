@@ -1,0 +1,30 @@
+[2025-12-05T16:17:35.395+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TEST_Price_Tracker_NoCode.prepare_login_for_tracker_test manual__2025-12-05T16:17:34.295329+00:00 [queued]>
+[2025-12-05T16:17:35.408+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TEST_Price_Tracker_NoCode.prepare_login_for_tracker_test manual__2025-12-05T16:17:34.295329+00:00 [queued]>
+[2025-12-05T16:17:35.409+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-05T16:17:35.428+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): prepare_login_for_tracker_test> on 2025-12-05 16:17:34.295329+00:00
+[2025-12-05T16:17:35.435+0000] {standard_task_runner.py:60} INFO - Started process 81 to run task
+[2025-12-05T16:17:35.439+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'TEST_Price_Tracker_NoCode', 'prepare_login_for_tracker_test', 'manual__2025-12-05T16:17:34.295329+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/test_price_tracker.py', '--cfg-path', '/tmp/tmp9gd8w3lm']
+[2025-12-05T16:17:35.441+0000] {standard_task_runner.py:88} INFO - Job 5: Subtask prepare_login_for_tracker_test
+[2025-12-05T16:17:35.523+0000] {task_command.py:423} INFO - Running <TaskInstance: TEST_Price_Tracker_NoCode.prepare_login_for_tracker_test manual__2025-12-05T16:17:34.295329+00:00 [running]> on host a4bbc07b0b9a
+[2025-12-05T16:17:35.623+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='TEST_Price_Tracker_NoCode' AIRFLOW_CTX_TASK_ID='prepare_login_for_tracker_test' AIRFLOW_CTX_EXECUTION_DATE='2025-12-05T16:17:34.295329+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-05T16:17:34.295329+00:00'
+[2025-12-05T16:17:35.624+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-12-05T16:17:35.626+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/project_scraper && xvfb-run --auto-servernum python3 /opt/***/project_scraper/udemy_login_auto.py']
+[2025-12-05T16:17:35.646+0000] {subprocess.py:86} INFO - Output:
+[2025-12-05T16:21:15.501+0000] {subprocess.py:93} INFO - [UDEMY LOGIN] 🔐 Dùng profile dir: /opt/***/udemy_profile
+[2025-12-05T16:21:15.503+0000] {subprocess.py:93} INFO - [UDEMY LOGIN] 👤 Email: huhi2048@gmail.com
+[2025-12-05T16:21:15.503+0000] {subprocess.py:93} INFO - [UDEMY LOGIN] 🌐 Mở trang chủ Udemy ...
+[2025-12-05T16:21:15.504+0000] {subprocess.py:93} INFO - [UDEMY LOGIN] ℹ️ Chưa login. Bắt đầu auto login...
+[2025-12-05T16:21:15.504+0000] {subprocess.py:93} INFO - [UDEMY LOGIN] 🌐 Mở trang login ...
+[2025-12-05T16:21:15.504+0000] {subprocess.py:93} INFO - [UDEMY LOGIN] ⌛ Đợi input email/password...
+[2025-12-05T16:21:15.505+0000] {subprocess.py:93} INFO - [UDEMY LOGIN] ❌ Lỗi thao tác: Page.wait_for_selector: Timeout 60000ms exceeded.
+[2025-12-05T16:21:15.505+0000] {subprocess.py:93} INFO - Call log:
+[2025-12-05T16:21:15.505+0000] {subprocess.py:93} INFO -   - waiting for locator("input[name=\"password\"]") to be visible
+[2025-12-05T16:21:15.506+0000] {subprocess.py:93} INFO - 
+[2025-12-05T16:21:15.506+0000] {subprocess.py:93} INFO - 👉 Hãy thử điền tay trên trình duyệt đang mở...
+[2025-12-05T16:21:15.507+0000] {subprocess.py:93} INFO - [UDEMY LOGIN] ⏳ Đang chờ đăng nhập thành công (Tối đa 2 phút)...
+[2025-12-05T16:21:15.507+0000] {subprocess.py:93} INFO - ⚠️ NẾU THẤY CAPTCHA, HÃY GIẢI BẰNG TAY TRÊN TRÌNH DUYỆT NGAY!
+[2025-12-05T16:21:15.507+0000] {subprocess.py:93} INFO - [UDEMY LOGIN] ⚠️ Hết giờ. Chưa login được.
+[2025-12-05T16:21:15.534+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-12-05T16:21:15.579+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=TEST_Price_Tracker_NoCode, task_id=prepare_login_for_tracker_test, execution_date=20251205T161734, start_date=20251205T161735, end_date=20251205T162115
+[2025-12-05T16:21:15.654+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-05T16:21:15.680+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,62 @@
+[2025-12-06T06:58:23.107+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: udemy_dashboard_TEST.run_dashboard_group1_TEST manual__2025-12-06T06:58:22.181770+00:00 [queued]>
+[2025-12-06T06:58:23.118+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: udemy_dashboard_TEST.run_dashboard_group1_TEST manual__2025-12-06T06:58:22.181770+00:00 [queued]>
+[2025-12-06T06:58:23.118+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-12-06T06:58:23.137+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_dashboard_group1_TEST> on 2025-12-06 06:58:22.181770+00:00
+[2025-12-06T06:58:23.144+0000] {standard_task_runner.py:60} INFO - Started process 29817 to run task
+[2025-12-06T06:58:23.151+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'udemy_dashboard_TEST', 'run_dashboard_group1_TEST', 'manual__2025-12-06T06:58:22.181770+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/udemy_scraping_pipeline.py', '--cfg-path', '/tmp/tmpwgo5l_et']
+[2025-12-06T06:58:23.152+0000] {standard_task_runner.py:88} INFO - Job 48: Subtask run_dashboard_group1_TEST
+[2025-12-06T06:58:23.246+0000] {task_command.py:423} INFO - Running <TaskInstance: udemy_dashboard_TEST.run_dashboard_group1_TEST manual__2025-12-06T06:58:22.181770+00:00 [running]> on host a4bbc07b0b9a
+[2025-12-06T06:58:23.396+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='udemy_dashboard_TEST' AIRFLOW_CTX_TASK_ID='run_dashboard_group1_TEST' AIRFLOW_CTX_EXECUTION_DATE='2025-12-06T06:58:22.181770+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-06T06:58:22.181770+00:00'
+[2025-12-06T06:58:23.399+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-12-06T06:58:23.401+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/project_scraper && xvfb-run --auto-servernum python3 /opt/***/project_scraper/udemy_scraper.py --job dashboard --group group1 --test']
+[2025-12-06T06:58:23.425+0000] {subprocess.py:86} INFO - Output:
+[2025-12-06T06:58:25.073+0000] {subprocess.py:93} INFO - --- BẮT ĐẦU JOB: dashboard (Group: group1 | Start: 1) ---
+[2025-12-06T06:58:25.074+0000] {subprocess.py:93} INFO - [debug] Connection: DefaultEndpoint...indows.net | Container: udemy-it
+[2025-12-06T06:58:59.050+0000] {subprocess.py:93} INFO - [auth] ❌ Lỗi copy profile: [('/opt/***/project_scraper/udemy_profile/SingletonCookie', '/opt/***/project_scraper/udemy_profile_auth_temp/SingletonCookie', "[Errno 2] No such file or directory: '/opt/***/project_scraper/udemy_profile/SingletonCookie'"), ('/opt/***/project_scraper/udemy_profile/SingletonLock', '/opt/***/project_scraper/udemy_profile_auth_temp/SingletonLock', "[Errno 2] No such file or directory: '/opt/***/project_scraper/udemy_profile/SingletonLock'"), ('/opt/***/project_scraper/udemy_profile/SingletonSocket', '/opt/***/project_scraper/udemy_profile_auth_temp/SingletonSocket', "[Errno 6] No such device or address: '/opt/***/project_scraper/udemy_profile/SingletonSocket'")]
+[2025-12-06T06:58:59.051+0000] {subprocess.py:93} INFO - [system] ⚠️ Running as GUEST (No Cookies).
+[2025-12-06T06:58:59.051+0000] {subprocess.py:93} INFO - 
+[2025-12-06T06:58:59.052+0000] {subprocess.py:93} INFO - >>> CATEGORY: Web Development
+[2025-12-06T06:58:59.052+0000] {subprocess.py:93} INFO - 
+[2025-12-06T06:58:59.053+0000] {subprocess.py:93} INFO - [phase-1] 🕸️ Gom link trang 1 -> 40...
+[2025-12-06T06:59:01.920+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 1): https://www.udemy.com/courses/development/web-development/?p=1
+[2025-12-06T06:59:05.392+0000] {subprocess.py:93} INFO - [wait] ⏳ Chờ thẻ khóa học...
+[2025-12-06T06:59:39.088+0000] {subprocess.py:93} INFO - [category] ✅ Tìm thấy 16 khóa học.
+[2025-12-06T06:59:41.162+0000] {subprocess.py:93} INFO - -> Page 1: +16 links
+[2025-12-06T06:59:43.148+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 1): https://www.udemy.com/courses/development/web-development/?p=2
+[2025-12-06T06:59:47.280+0000] {subprocess.py:93} INFO - [wait] ⏳ Chờ thẻ khóa học...
+[2025-12-06T07:00:19.328+0000] {subprocess.py:93} INFO - [category] ✅ Tìm thấy 16 khóa học.
+[2025-12-06T07:00:28.297+0000] {subprocess.py:93} INFO - -> Page 2: +16 links
+[2025-12-06T07:00:28.303+0000] {subprocess.py:93} INFO - 🛑 TEST MODE: Đã đủ 2 trang.
+[2025-12-06T07:00:28.305+0000] {subprocess.py:93} INFO - 
+[2025-12-06T07:00:28.310+0000] {subprocess.py:93} INFO - [phase-2] 🚀 Parse & Save 32 khóa học...
+[2025-12-06T07:01:38.490+0000] {subprocess.py:93} INFO -   -> Progress: 32/32
+[2025-12-06T07:01:38.555+0000] {subprocess.py:93} INFO - [system] 🧹 RAM Cleaned.
+[2025-12-06T07:01:38.557+0000] {subprocess.py:93} INFO - 🛑 TEST MODE: Dừng sau 2 trang.
+[2025-12-06T07:01:38.557+0000] {subprocess.py:93} INFO - 
+[2025-12-06T07:01:38.558+0000] {subprocess.py:93} INFO - >>> CATEGORY: Software Engineering
+[2025-12-06T07:01:38.558+0000] {subprocess.py:93} INFO - 
+[2025-12-06T07:01:38.558+0000] {subprocess.py:93} INFO - [phase-1] 🕸️ Gom link trang 1 -> 40...
+[2025-12-06T07:01:41.410+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 1): https://www.udemy.com/courses/development/software-engineering/?p=1
+[2025-12-06T07:01:44.714+0000] {subprocess.py:93} INFO - [wait] ⏳ Chờ thẻ khóa học...
+[2025-12-06T07:02:12.010+0000] {subprocess.py:93} INFO - [category] ✅ Tìm thấy 16 khóa học.
+[2025-12-06T07:02:13.979+0000] {subprocess.py:93} INFO - -> Page 1: +16 links
+[2025-12-06T07:02:15.797+0000] {subprocess.py:93} INFO - [driver-pw] 🌍 Mở trang (Lần 1): https://www.udemy.com/courses/development/software-engineering/?p=2
+[2025-12-06T07:02:23.803+0000] {subprocess.py:93} INFO - [wait] ⏳ Chờ thẻ khóa học...
+[2025-12-06T07:03:01.621+0000] {subprocess.py:93} INFO - [category] ✅ Tìm thấy 16 khóa học.
+[2025-12-06T07:03:05.228+0000] {subprocess.py:93} INFO - -> Page 2: +16 links
+[2025-12-06T07:03:05.229+0000] {subprocess.py:93} INFO - 🛑 TEST MODE: Đã đủ 2 trang.
+[2025-12-06T07:03:05.232+0000] {subprocess.py:93} INFO - 
+[2025-12-06T07:03:05.236+0000] {subprocess.py:93} INFO - [phase-2] 🚀 Parse & Save 32 khóa học...
+[2025-12-06T07:04:02.923+0000] {subprocess.py:93} INFO -   -> Progress: 32/32
+[2025-12-06T07:04:02.927+0000] {subprocess.py:93} INFO - 
+[2025-12-06T07:04:02.929+0000] {subprocess.py:93} INFO - [azure] ☁️ Đang upload: TEST_dashboard_group1_p1-3_20251206_070402 (32 khóa)...
+[2025-12-06T07:04:03.593+0000] {subprocess.py:93} INFO - [azure] ✅ Saved Courses: dashboard/TEST_dashboard_group1_p1-3_20251206_070402_courses.parquet
+[2025-12-06T07:04:03.664+0000] {subprocess.py:93} INFO - [azure] ✅ Saved Instructors: dashboard/TEST_dashboard_group1_p1-3_20251206_070402_instructors.parquet
+[2025-12-06T07:04:03.778+0000] {subprocess.py:93} INFO - [system] 🧹 RAM Cleaned.
+[2025-12-06T07:04:03.779+0000] {subprocess.py:93} INFO - 🛑 TEST MODE: Dừng sau 2 trang.
+[2025-12-06T07:04:03.780+0000] {subprocess.py:93} INFO - 
+[2025-12-06T07:04:03.781+0000] {subprocess.py:93} INFO - --- [HOÀN TẤT JOB] ---
+[2025-12-06T07:04:04.432+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-12-06T07:04:04.553+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=udemy_dashboard_TEST, task_id=run_dashboard_group1_TEST, execution_date=20251206T065822, start_date=20251206T065823, end_date=20251206T070404
+[2025-12-06T07:04:04.696+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-06T07:04:04.813+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

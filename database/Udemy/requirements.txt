@@ -1,0 +1,18 @@
+pandas
+beautifulsoup4
+curl_cffi
+python-dotenv
+azure-storage-blob
+lxml
+playwright
+requests
+sqlalchemy
+# --- Gắn cứng phiên bản dbt để cài nhanh hơn ---
+dbt-core==1.7.10
+dbt-postgres==1.7.10
+# --- CÁC GÓI BẮT BUỘC CHO AIRFLOW ---
+psycopg2-binary
+apache-airflow-providers-celery
+apache-airflow-providers-postgres
+fastparquet
+pyarrow

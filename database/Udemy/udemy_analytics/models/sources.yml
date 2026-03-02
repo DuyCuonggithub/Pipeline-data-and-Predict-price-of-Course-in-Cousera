@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: udemy_dw
+    schema: raw
+    tables:
+      - name: courses
+      - name: instructors
+      - name: price_tracker

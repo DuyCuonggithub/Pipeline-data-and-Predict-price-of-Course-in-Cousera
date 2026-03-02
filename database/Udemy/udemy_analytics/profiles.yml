@@ -1,0 +1,14 @@
+udemy_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      # [QUAN TRỌNG] Tên service trong docker-compose
+      host: postgres_dw
+      user: user_dw
+      password: password_dw
+      # [QUAN TRỌNG] Cổng nội bộ của container (5432), KHÔNG PHẢI cổng ngoài (5433)
+      port: 5432
+      dbname: udemy_dw
+      schema: public
+      threads: 4
