@@ -4,16 +4,16 @@
 [![Internship](https://img.shields.io/badge/Intern-XinKgroup-green?style=for-the-badge)](https://www.facebook.com/xinkgroup)
 
 ## 📝 Giới thiệu dự án
-Dự án **Capstone 2** được thực hiện bởi nhóm sinh viên ngành **Khoa học dữ liệu và Phân tích kinh doanh**, Trường Đại học Kinh tế – Đại học Đà Nẵng. Chúng tôi xây dựng một hệ thống dữ liệu khép kín (**End-to-End**) nhằm tự động hóa việc thu thập, xử lý và theo dõi biến động giá các khóa học IT trên nền tảng Udemy[cite: 84, 90].
+Dự án **Capstone 2** được thực hiện bởi nhóm sinh viên ngành **Khoa học dữ liệu và Phân tích kinh doanh**, Trường Đại học Kinh tế – Đại học Đà Nẵng. Chúng tôi xây dựng một hệ thống dữ liệu khép kín (**End-to-End**) nhằm tự động hóa việc thu thập, xử lý và theo dõi biến động giá các khóa học IT trên nền tảng Udemy.
 
 * **Mục tiêu:** Xây dựng pipeline tự động vận hành theo lịch, tổ chức kho dữ liệu logic và cung cấp công cụ hỗ trợ người dùng "săn" khóa học giá tốt.
 * **Đơn vị thực tập:** Công ty phần mềm **XinKgroup**.
-* **Giảng viên hướng dẫn:** ThS. Trần Văn Lộc & ThS. .
+* **Giảng viên hướng dẫn:** ThS. Trần Văn Lộc .
 
 ---
 
 ## 🏗 Kiến trúc hệ thống (System Architecture)
-Hệ thống áp dụng mô hình **ELT (Extract – Load – Transform)** kết hợp với kiến trúc **Medallion** (Bronze - Silver - Gold) để quản lý vòng đời dữ liệu. Toàn bộ hạ tầng được đóng gói bằng **Docker** và kết nối an toàn qua **Tailscale VPN**[cite: 105, 133].
+Hệ thống áp dụng mô hình **ELT (Extract – Load – Transform)** kết hợp với kiến trúc **Medallion** (Bronze - Silver - Gold) để quản lý vòng đời dữ liệu. Toàn bộ hạ tầng được đóng gói bằng **Docker** và kết nối an toàn qua **Tailscale VPN**.
 
 | Lớp thành phần | Công nghệ sử dụng | Chức năng chính |
 | :--- | :--- | :--- |
